@@ -1,8 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Лысенко Ирина](https://up.htmlacademy.ru/adaptive/20/user/1493941).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Татьяна Симоненко] (https://htmlacademy.ru/profile/id6613)
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
