@@ -52,12 +52,12 @@
                         <legend class="form__block-name">Тип</legend>
                         <ul class="form__block-list list">
                             <li class="list__item">
-                                <input class="visually-hidden list__radio list__radio--checked" type="radio" id="" name="" checked>
-                                <label class="list__radio-name" for="">Аксессуар для интерьера</label>
+                                <input class="visually-hidden list__radio list__radio--checked" type="radio" id="type1" name="type" value="1" checked>
+                                <label class="list__radio-name" for="type1">Аксессуар для интерьера</label>
                             </li>
                             <li class="list__item">
-                                <input class="visually-hidden  list__radio" type="radio" id="" name="">
-                                <label class="list__radio-name" for="">Детская игрушка</label>
+                                <input class="visually-hidden  list__radio" type="radio" id="type2" name="type" value="2">
+                                <label class="list__radio-name" for="type2">Детская игрушка</label>
                             </li>
                         </ul>
                     </fieldset>
@@ -94,26 +94,26 @@
                         <legend class="form__block-name">ФИО</legend>
                         <p class="form__input-group">
                             <label class="form__input-name" for="">Имя:</label>
-                            <input class="form__input-text" type="text" name="" pattern="[0-9]" placeholder="Введите ваше имя*">
+                            <input class="form__input-text" type="text" name="name" placeholder="Введите ваше имя*" required autofocus>
                         </p>
                         <p class="form__input-group">
                             <label class="form__input-name" for="">Фамилия:</label>
-                            <input class="form__input-text" type="text" name="" pattern="[0-9]" placeholder="Укажите фамилию*">
+                            <input class="form__input-text" type="text" name="name2" placeholder="Укажите фамилию*" required>
                         </p>
                         <p class="form__input-group">
                             <label class="form__input-name" for="">Отчество:</label>
-                            <input class="form__input-text" type="text" name="" pattern="[0-9]" placeholder="Отчество, если желаете">
+                            <input class="form__input-text" type="text" name="name3" placeholder="Отчество, если желаете">
                         </p>
                     </fieldset>
                     <fieldset class="form__block">
                         <legend class="visually-hidden form__block-name">Ваши контакты</legend>
                         <p class="form__input-group">
                             <label class="form__input-name" for="">Тел</label>
-                            <input class="form__input-tel" type="phone" name="" pattern="[0-9]" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                            <input class="form__input-tel" type="tel" name="tel" pattern="[+]{1}[7]{1} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
                         </p>
                         <p class="form__input-group">
                             <label class="form__input-name" for="">E-mail</label>
-                            <input class="form__input-email" type="email" name="" placeholder="Ваш Email*">
+                            <input class="form__input-email" type="email" name="email" placeholder="Ваш Email*" required>
                         </p>
                     </fieldset>
                     <fieldset class="form__block">
@@ -123,7 +123,7 @@
                             <textarea class="form__textarea" rows="6" name="text" id="text" placeholder="Опишите все ваши пожелания к заказу"> </textarea>
                         </p>
                     </fieldset>
-                    <p class="">*Поля обязательны для заполнения</p>
+                    <p class="form__footnote">*Поля обязательны для заполнения</p>
                     <button class="button form__button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
                 </form>
             </div>
@@ -154,4 +154,6 @@
         </div>
     </footer>
 
-</body></html>
+</body>
+
+</html>
