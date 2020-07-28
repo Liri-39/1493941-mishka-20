@@ -1,0 +1,16 @@
+.featured {
+    margin-top: 31px;
+    margin-bottom: 31px;
+    padding-bottom: 36px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    border-image: url('.././img/bg-zigzag-fill.svg');
+}
+
+.featured__subtitle {
+    color: $tiffany;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
+}

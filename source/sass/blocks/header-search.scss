@@ -1,0 +1,19 @@
+.header-search {}
+
+.header-search__form {
+    padding-left: 46px;
+    background: url('.././img/icon-search.svg') no-repeat center left;
+}
+
+.header-search__input,
+.header-search__input::placeholder {
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    color: $black;
+    opacity: 1;
+    font-weight: bold;
+    @include main-font;
+}

@@ -1,0 +1,15 @@
+.page {
+    height: 100%;
+    @include main-font;
+}
+
+.page__body {
+    background-color: $white;
+    min-height: 100%;
+    margin: 0;
+    color: $black;
+}
+
+.page__body * {
+    box-sizing: border-box;
+}

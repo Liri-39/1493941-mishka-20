@@ -1,0 +1,41 @@
+.goods-item {
+    color: $greyish-black;
+}
+
+.goods-item__link {
+    text-decoration: none;
+}
+
+.goods-item__title {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0;
+    color: $black;
+}
+
+.goods-item__description {
+    font-size: 15px;
+}
+
+.goods-item__properties {}
+
+.goods-item__property-name {}
+
+.goods-item__property-value {}
+
+.goods-item__img {
+    background-color: $white;
+}
+
+.goods-item__price {
+    font-weight: bold;
+}
+
+.goods-item__button {
+    line-height: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $greyish-black;
+}

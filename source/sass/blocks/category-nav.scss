@@ -1,0 +1,34 @@
+.category-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.category-nav__item {
+    padding-top: 24px;
+    padding-bottom: 31px;
+}
+
+.category-nav__item-link {
+    display: flex;
+    width: 50%;
+    color: $white;
+    font-weight: bold;
+    font-size: 19px;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.category-nav__item--interior {
+    background: $tiffany url('.././img/icon-interior.svg') no-repeat center right;
+    background-blend-mode: soft-light;
+    background-position-x: 91%;
+}
+
+.category-nav__item--toys {
+    background: $dark-tiffany url('.././img/icon-toy.svg') no-repeat center right;
+    background-blend-mode: soft-light;
+    background-position-x: 93%;
+}
