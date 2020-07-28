@@ -1,0 +1,53 @@
+.advantages {
+    color: $black;
+    margin-top: 31px;
+    padding-bottom: 36px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.advantages__title {}
+
+.advantages__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.advantages__item {
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+.advantages__item:before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 40px;
+    margin-bottom: 26px;
+}
+
+.advantages__item--eco:before {
+    background: $white url(.././img/icon-feature-flower.svg) no-repeat left bottom;
+}
+
+.advantages__item--style:before {
+    background: $white url(.././img/icon-feature-money.svg) no-repeat left bottom;
+}
+
+.advantages__item--like:before {
+    background: $white url(.././img/icon-feature-heart.svg) no-repeat left bottom;
+}
+
+.advantages__item--love:before {
+    background: $white url(.././img/icon-feature-ball.svg) no-repeat left bottom;
+}
+
+.advantages__item--native:before {
+    background: $white url(.././img/icon-feature-rocket.svg) no-repeat left bottom;
+}
+
+.advantages__item--gift:before {
+    background: $white url(.././img/icon-feature-gift.svg) no-repeat left bottom;
+}

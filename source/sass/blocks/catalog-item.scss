@@ -1,0 +1,30 @@
+.catalog-item {}
+
+.catalog-item__link {}
+
+.catalog-item__img {
+    background-color: $ligthgrey;
+}
+
+.catalog-item__title {
+    display: flex;
+    text-decoration: none;
+    color: $black;
+    font-weight: bold;
+}
+
+.catalog-item__desc {
+    font-size: 13px;
+    line-height: 30px;
+    color: $greyish-black;
+}
+
+.catalog-item__price {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.catalog-item__button {
+    background: url('../../img/icon-cart.svg') no-repeat center;
+}

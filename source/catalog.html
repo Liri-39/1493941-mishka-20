@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body class="page__body">
 
     <header class="page-header">
         <div class="page-header__wrapper">
-            <a class="page-header__logo">
-                <img src="https://via.placeholder.com/150x150" alt="Мишка-лого">
+            <a class="page-header__logo" href="index.html">
+                <img class="page-header__logo-img" src="./img/logo-mobile.svg" alt="Мишка-лого">
             </a>
-            <button class="page-header__menu-button" type="button" aria-label="Меню"></button>
+            <button class="button page-header__menu-button" type="button" aria-label="Меню"></button>
             <nav class="page-header__nav main-nav">
                 <ul class="main-nav__list">
                     <li class="main-nav__item">
@@ -29,11 +30,11 @@
                     <li class="main-nav__item header-search">
                         <form class="header-search__form" action="https://echo.htmlacademy.ru" method="get" id="search-form">
                             <label class="visually-hidden" for="search">Поиск по сайту</label>
-                            <input class="header-search__input" type="search" name="search" id="search">
+                            <input class="header-search__input" type="search" name="search" id="search" placeholder="Поиск по сайту">
                         </form>
                     </li>
                     <li class="main-nav__item basket">
-                        <a class="basket__link">
+                        <a class="main-nav__item--link basket__link" href="">
                             Корзина: <span class="basket__value">пока пуста</span>
                         </a>
                     </li>
@@ -49,30 +50,36 @@
                 <ul class="catalog__list">
                     <li class="catalog__item catalog-item">
                         <a class="catalog-item__link" href="" aria-label="Зайчик-попрыгайчик">
-                            <img class="catalog-item__img" src="https://via.placeholder.com/150x150" alt="Зайчик-попрыгайчик">
+                            <img class="catalog-item__img" src="./img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
                         </a>
-                        <a class="catalog-item__title" href="">Зайчик-попрыгайчик</a>
-                        <p class="catalog-item__desc">Рост 30 см, вес 200 г</p>
-                        <p class="catalog-item__price">1 200 руб.</p>
-                        <button class="button catalog-item__button" type="button" aria-label="Добавить в корзину"></button>
+                        <div class="catalog-item__info">
+                            <a class="catalog-item__title" href="">Зайчик-попрыгайчик</a>
+                            <p class="catalog-item__desc">Рост 30 см, вес 200 г</p>
+                            <p class="catalog-item__price">1 200 руб.</p>
+                            <button class="button catalog-item__button" type="button" aria-label="Добавить в корзину"></button>
+                        </div>
                     </li>
                     <li class="catalog__item catalog-item">
                         <a class="catalog-item__link" href="" aria-label="Корзинка для белья">
-                            <img class="catalog-item__img" src="https://via.placeholder.com/150x150" alt="Корзинка для белья">
+                            <img class="catalog-item__img" src="./img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
                         </a>
-                        <a class="catalog-item__title" href="">Корзинка для белья</a>
-                        <p class="catalog-item__desc">Диаметр 15 см, высота 10 см</p>
-                        <p class="catalog-item__price">690 руб.</p>
-                        <button class="button catalog-item__button" type="button" aria-label="Добавить в корзину"></button>
+                        <div class="catalog-item__info">
+                            <a class="catalog-item__title" href="">Корзинка для белья</a>
+                            <p class="catalog-item__desc">Диаметр 15 см, высота 10 см</p>
+                            <p class="catalog-item__price">690 руб.</p>
+                            <button class="button catalog-item__button" type="button" aria-label="Добавить в корзину"></button>
+                        </div>
                     </li>
                     <li class="catalog__item catalog-item">
                         <a class="catalog-item__link" href="" aria-label="Большая корзинка для игрушек">
-                            <img class="catalog-item__img" src="https://via.placeholder.com/150x150" alt="Большая корзинка для игрушек">
+                            <img class="catalog-item__img" src="./img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
                         </a>
-                        <a class="catalog-item__title" href="">Большая корзинка для игрушек</a>
-                        <p class="catalog-item__desc">Диаметр 30 см, высота 30 см</p>
-                        <p class="catalog-item__price">1 500 руб.</p>
-                        <button class="button catalog-item__button" type="button" aria-label="Добавить в корзину"></button>
+                        <div class="catalog-item__info">
+                            <a class="catalog-item__title" href="">Большая корзинка для игрушек</a>
+                            <p class="catalog-item__desc">Диаметр 30 см, высота 30 см</p>
+                            <p class="catalog-item__price">1 500 руб.</p>
+                            <button class="button catalog-item__button" type="button" aria-label="Добавить в корзину"></button>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -103,10 +110,12 @@
             <div class="page-footer__copyright copyright">
                 <b class="copyright__text">Разработано:</b>
                 <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy.ru">
-                    <img src="https://via.placeholder.com/150x150" alt="htmlacademy-logo">
+                    <img src="./img/htmlacademy.svg" width="30" height="35" alt=" htmlacademy-logo">
                 </a>
             </div>
         </div>
     </footer>
 
-</body></html>
+</body>
+
+</html>
