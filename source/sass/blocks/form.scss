@@ -1,0 +1,93 @@
+.form {}
+
+.form__item {
+    border: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 34px;
+}
+
+.form__input-group {
+    margin: 0;
+    padding: 0;
+    margin-top: 22px;
+}
+
+.form__item-name {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $tiffany;
+}
+
+.form__item-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.form__input-name {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.form__input {
+    width: 100%;
+    border: none;
+    padding: 17px 0;
+    box-shadow: inset 0px -2px 0px #000000;
+    font-size: 17px;
+    line-height: 18px;
+    @include main-font;
+}
+
+.form__textarea:-moz-placeholder,
+.form__textarea:-webkit-input-placeholder,
+.form__input::placeholder {
+    opacity: 0.3;
+    @include main-font;
+}
+
+.form__input--text {}
+
+.form__input--tel {}
+
+.form__input--email {}
+
+.form__textarea {
+    display: block;
+    width: 100%;
+    margin-top: 22px;
+    border: 2px solid $greyish-black;
+    padding: 17px 18px;
+    @include main-font;
+}
+
+.form__footnote {
+    margin: 0;
+    margin-bottom: 17px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.form__button {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 13px;
+    padding: 16px 11px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $greyish-black;
+    background-color: $white;
+    border: 2px solid $greyish-black;
+}
