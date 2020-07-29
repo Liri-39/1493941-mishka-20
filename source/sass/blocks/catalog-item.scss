@@ -1,6 +1,8 @@
 .catalog-item {}
 
-.catalog-item__link {}
+.catalog-item__link {
+    @include center-x;
+}
 
 .catalog-item__img {
     background-color: $ligthgrey;
@@ -25,6 +27,12 @@
     line-height: 24px;
 }
 
+.catalog-item__info {
+    padding-top: 28px;
+    padding-left: 28px;
+    padding-bottom: 27px;
+}
+
 .catalog-item__button {
-    background: url('../../img/icon-cart.svg') no-repeat center;
+    background: url('.././img/icon-cart.svg') no-repeat center;
 }

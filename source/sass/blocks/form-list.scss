@@ -1,0 +1,34 @@
+.form-list {
+    margin-top: 35px;
+    margin-bottom: 8px;
+}
+
+.form-list__item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.form-list__radio {}
+
+.form-list__radio--checked {}
+
+.form-list__radio-name {
+    display: inline-block;
+    font-weight: bold;
+    line-height: 18px;
+    margin-left: 62px;
+}
+
+.form-list__checkbox {}
+
+.form-list__checkbox--checked {}
+
+.form-list__checkbox-name {
+    display: inline-block;
+    font-weight: bold;
+    line-height: 18px;
+    margin-left: 62px;
+}
+
+.form-list__checkbox-name:not(:last-child) {
+    margin-bottom: 45px;
+}

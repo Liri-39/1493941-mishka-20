@@ -1,0 +1,38 @@
+.video {
+    padding: 0 30px 33px;
+    @include center-x;
+    flex-wrap: wrap;
+}
+
+.video__title {
+    width: 100%;
+    padding: 22px 13px 27px 91px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    background: url('.././img/icon-video.svg') no-repeat 34px center;
+}
+
+.video__video {
+    width: 100%;
+}
+
+.video__desc {
+    margin: 0;
+    padding: 35px 0 41px 34px;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.video__button {
+    width: 100%;
+    margin: 0 34px;
+    padding: 18px 11px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $greyish-black;
+    background-color: $white;
+    border: 2px solid $greyish-black;
+}

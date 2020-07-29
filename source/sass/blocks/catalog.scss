@@ -2,23 +2,15 @@
     margin: 0;
     margin-top: 30px;
     padding: 0 30px;
+    @include center-x;
 }
 
 .catalog__list {
 
+    flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 .catalog__item {}
-
-.catalog-item__info {
-    padding-top: 28px;
-    padding-left: 28px;
-    padding-bottom: 27px;
-}
-
-.catalog-item__button {
-    background: url('.././img/icon-cart.svg') no-repeat center;
-}
