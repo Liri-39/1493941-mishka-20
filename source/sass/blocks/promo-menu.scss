@@ -1,0 +1,29 @@
+.promo-menu {
+    font-size: 15px;
+    line-height: 24px;
+    color: $greyish-black;
+
+    @media (min-width: $tablet-width) {}
+
+    @media (min-width: $desktop-width) {}
+}
+
+.promo-menu__list {
+    display: flex;
+    list-style: none;
+}
+
+.promo-menu__item {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+        display: block;
+    }
+}
+
+.promo-menu__item--rigth {
+
+    @media (min-width: $tablet-width) {
+        display: block;
+    }
+}

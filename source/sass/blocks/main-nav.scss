@@ -2,10 +2,13 @@
     margin: 0;
     padding: 0;
     list-style: none;
-
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+        flex-direction: row;
+    }
 }
 
 .main-nav__item--link {

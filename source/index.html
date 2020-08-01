@@ -15,7 +15,7 @@
                 <img class="page-header__logo-img" src="./img/logo-mobile.svg" alt="Мишка-лого" width="86" height="36">
             </a>
             <button class="button page-header__menu-button" type="button" aria-label="Меню"></button>
-            <nav class="page-header__nav main-nav">
+            <nav class="page-header__nav page-header__nav--menu main-nav">
                 <ul class="main-nav__list">
                     <li class="main-nav__item">
                         <a class="main-nav__item--link" href="catalog.html">
@@ -27,6 +27,10 @@
                             Вязание на заказ
                         </a>
                     </li>
+                </ul>
+            </nav>
+            <nav class="page-header__nav page-header__nav--top-menu main-nav">
+                <ul class="main-nav__list">
                     <li class="main-nav__item header-search">
                         <form class="header-search__form" action="https://echo.htmlacademy.ru" method="get" id="search-form">
                             <label class="visually-hidden" for="search">Поиск по сайту</label>
@@ -40,14 +44,22 @@
                     </li>
                 </ul>
             </nav>
+            <nav class="page-header__promo-menu promo-menu">
+                <ul class="promo-menu__list">
+                    <li class="promo-menu__item">Новые поступления</li>
+                    <li class="promo-menu__item">Распродажа</li>
+                    <li class="promo-menu__item promo-menu__item--rigth">Бесплатная доставка по России
+                    </li>
+                </ul>
+            </nav>
             <div class="page-header__title"><span class="page-header__title-text">Милые штуки <br>ручной <br>работы для дома</span></div>
-            <nav class="page-header__nav category-nav">
+            <nav class="page-header__category-nav category-nav">
                 <ul class="category-nav__list">
                     <li class="category-nav__item category-nav__item--interior">
                         <a class="category-nav__item-link" href="">Предметы интерьера</a>
                     </li>
-                    <li class=" category-nav__item--toys">
-                        <a class="category-nav__item category-nav__item-link" href="">Детские игрушки</a>
+                    <li class="category-nav__item category-nav__item--toys">
+                        <a class="category-nav__item-link" href="">Детские игрушки</a>
                     </li>
                 </ul>
             </nav>
