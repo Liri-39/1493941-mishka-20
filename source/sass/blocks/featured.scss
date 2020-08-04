@@ -5,7 +5,18 @@
     padding-left: 30px;
     padding-right: 30px;
 
-    border-image: url('.././img/bg-zigzag-fill.svg');
+    @media (min-width: $tablet-width) {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, min-content);
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, min-content);
+    }
 }
 
 .featured__subtitle {
@@ -13,4 +24,14 @@
     font-weight: bold;
     line-height: 20px;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+        grid-column: 4/5;
+        grid-row: 1;
+    }
+
+    @media (min-width: $desktop-width) {
+        grid-column: 1/2;
+        grid-row: 1;
+    }
 }

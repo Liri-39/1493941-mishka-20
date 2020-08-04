@@ -10,12 +10,12 @@
 <body class="page__body">
 
     <header class="page-header">
-        <div class="page-header__wrapper">
-            <a class="page-header__logo" href="index.html">
-                <img class="page-header__logo-img" src="./img/logo-mobile.svg" alt="Мишка-лого">
+        <div class="page-header__wrapper" href="index.html">
+            <a class="page-header__logo">
+                <img class="page-header__logo-img" src="./img/logo-mobile.svg" alt="Мишка-лого" width="86" height="36">
             </a>
             <button class="button page-header__menu-button" type="button" aria-label="Меню"></button>
-            <nav class="page-header__nav main-nav">
+            <nav class="page-header__nav page-header__nav--menu main-nav">
                 <ul class="main-nav__list">
                     <li class="main-nav__item">
                         <a class="main-nav__item--link" href="catalog.html">
@@ -27,6 +27,10 @@
                             Вязание на заказ
                         </a>
                     </li>
+                </ul>
+            </nav>
+            <nav class="page-header__nav page-header__nav--top-menu main-nav">
+                <ul class="main-nav__list">
                     <li class="main-nav__item header-search">
                         <form class="header-search__form" action="https://echo.htmlacademy.ru" method="get" id="search-form">
                             <label class="visually-hidden" for="search">Поиск по сайту</label>
@@ -40,6 +44,15 @@
                     </li>
                 </ul>
             </nav>
+            <nav class="page-header__promo-menu promo-menu">
+                <ul class="promo-menu__list">
+                    <li class="promo-menu__item">Новые поступления</li>
+                    <li class="promo-menu__item">Распродажа</li>
+                    <li class="promo-menu__item promo-menu__item--rigth">Бесплатная доставка по России
+                    </li>
+                </ul>
+            </nav>
+
         </div>
     </header>
 
@@ -94,6 +107,11 @@
 
     <footer class="page-footer">
         <div class="page-footer__wrapper">
+            <div class="page-footer__logo" href="index.html">
+                <a class="page-header__logo">
+                    <img class="page-header__logo-img" src="./img/logo-mobile.svg" alt="Мишка-лого" width="86" height="36">
+                </a>
+            </div>
             <div class="page-footer__social social">
                 <ul class="social__list">
                     <li class="social__item">
