@@ -3,14 +3,26 @@
     margin-top: 30px;
     padding: 0 30px;
     @include center-x;
+
+    @media (min-width: $desktop-width) {}
 }
 
 .catalog__list {
-
+    width: 100%;
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
+
+    @media (min-width: $desktop-width) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 52px;
+    }
 }
 
-.catalog__item {}
+.catalog__item {
+    margin-bottom: 54px;
+
+    @media (min-width: $desktop-width) {}
+}

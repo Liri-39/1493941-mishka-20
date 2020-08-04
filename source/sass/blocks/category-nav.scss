@@ -1,12 +1,29 @@
+.category-nav {
+    @media (min-width: $tablet-width) {
+        position: relative;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+
 .category-nav__list {
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+    }
 }
 
 .category-nav__item {
     padding-top: 24px;
     padding-bottom: 31px;
+
+    @media (min-width: $tablet-width) {
+        flex-grow: 1;
+    }
 }
 
 .category-nav__item-link {
