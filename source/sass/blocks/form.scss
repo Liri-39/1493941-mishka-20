@@ -1,16 +1,41 @@
-.form {}
+.form {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .form__item {
     border: none;
     margin: 0;
     padding: 0;
     padding-bottom: 34px;
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (min-width: $desktop-width) {
+
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
 }
 
 .form__input-group {
     margin: 0;
     padding: 0;
     margin-top: 22px;
+
+    @media (min-width: $tablet-width) {
+        grid-column: 2/5;
+        display: flex;
+    }
+
+    @media (min-width: $desktop-width) {
+        grid-column: 3/6;
+    }
 }
 
 .form__item-name {
@@ -22,18 +47,51 @@
     line-height: 16px;
     text-transform: uppercase;
     color: $tiffany;
+
+    @media (min-width: $tablet-width) {
+        grid-column: 1;
+    }
+
+    @media (min-width: $desktop-width) {
+        grid-column: 2;
+    }
 }
 
 .form__item-list {
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $tablet-width) {
+        grid-column: 2/5;
+    }
+
+    @media (min-width: $desktop-width) {
+        grid-column: 3/6;
+    }
+}
+
+.form__item-list--checkbox {
+    @media (min-width: $tablet-width) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media (min-width: $desktop-width) {}
 }
 
 .form__input-name {
     font-weight: bold;
     font-size: 17px;
     line-height: 18px;
+
+    @media (min-width: $tablet-width) {
+        grid-column: 1;
+    }
+
+    @media (min-width: $desktop-width) {
+        grid-column: 2;
+    }
 }
 
 .form__input {
@@ -44,6 +102,14 @@
     font-size: 17px;
     line-height: 18px;
     @include main-font;
+
+    @media (min-width: $tablet-width) {
+        grid-column: 2/5;
+    }
+
+    @media (min-width: $desktop-width) {
+        grid-column: 3/6;
+    }
 }
 
 .form__textarea:-moz-placeholder,
@@ -53,11 +119,6 @@
     @include main-font;
 }
 
-.form__input--text {}
-
-.form__input--tel {}
-
-.form__input--email {}
 
 .form__textarea {
     display: block;
@@ -66,6 +127,14 @@
     border: 2px solid $greyish-black;
     padding: 17px 18px;
     @include main-font;
+
+    @media (min-width: $tablet-width) {
+        grid-column: 2/5;
+    }
+
+    @media (min-width: $desktop-width) {
+        grid-column: 3/6;
+    }
 }
 
 .form__footnote {
@@ -73,6 +142,12 @@
     margin-bottom: 17px;
     font-size: 14px;
     line-height: 16px;
+
+    @media (min-width: $tablet-width) {
+        width: auto;
+        order: 1;
+        margin-left: auto;
+    }
 }
 
 .form__button {
@@ -90,4 +165,8 @@
     color: $greyish-black;
     background-color: $white;
     border: 2px solid $greyish-black;
+
+    @media (min-width: $tablet-width) {
+        width: auto;
+    }
 }
