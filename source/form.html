@@ -62,7 +62,7 @@
             <div class="page-main__order-form">
                 <form class="form" method="post" action="https://echo.htmlacademy.ru" id="order-form" name="order-form">
                     <fieldset class="form__item">
-                        <legend class="form__item-name">Тип</legend>
+                        <p class="form__item-name">Тип</p>
                         <ul class="form__item-list form-list">
                             <li class="form-list__item">
                                 <input class="visually-hidden form-list__radio form-list__radio--checked" type="radio" id="type1" name="type" value="1" checked>
@@ -75,8 +75,8 @@
                         </ul>
                     </fieldset>
                     <fieldset class="form__item">
-                        <legend class="form__item-name">Цвет</legend>
-                        <ul class="form__item-list form-list">
+                        <p class="form__item-name">Цвет</p>
+                        <ul class="form__item-list form__item-list--checkbox form-list">
                             <li class="form-list__item">
                                 <input class="visually-hidden form-list__checkbox form-list__checkbox--checked" type="checkbox" id="color1" name="color1" checked>
                                 <label class="form-list__checkbox-name" for="color1">Белый</label>
@@ -104,7 +104,7 @@
                         </ul>
                     </fieldset>
                     <fieldset class="form__item">
-                        <legend class="form__item-name">ФИО</legend>
+                        <p class="form__item-name">ФИО</p>
                         <p class="form__input-group">
                             <label class="form__input-name" for="">Имя:</label>
                             <input class="form__input form__input--text" type="text" name="name" placeholder="Введите ваше имя*" required autofocus>
@@ -118,24 +118,19 @@
                             <input class="form__input form__input--text" type="text" name="name3" placeholder="Отчество, если желаете">
                         </p>
                     </fieldset>
-                    <fieldset class="form__item">
-                        <legend class="visually-hidden">Ваши контакты</legend>
-
-                        <label class="form__item-name" for="">Тел</label>
-                        <input class="form__input form__input--tel" type="tel" name="tel" pattern="[+]{1}[7]{1} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-
-                        <p class="form__input-group">
-                            <label class="form__item-name" for="">E-mail</label>
-                            <input class="form__input form__input--email" type="email" name="email" placeholder="Ваш Email*" required>
-                        </p>
-                    </fieldset>
-                    <fieldset class="form__item">
+                    <p class="form__item">
+                        <label class="form__item-name" for="tel" aria-label="Ваш номер  телефона">Тел</label>
+                        <input class="form__input form__input--tel" type="tel" name="tel" id="tel" pattern="[+]{1}[7]{1} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                    </p>
+                    <p class="form__item">
+                        <label class="form__item-name" for="email" aria-label="Ваш адрес электронной почты">E-mail</label>
+                        <input class="form__input form__input--email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+                    </p>
+                    <p class="form__item">
                         <legend class="visually-hidden">Дополнительная информация к заказу</legend>
-
                         <label class="form__item-name" for="text">Доп</label>
-                        <textarea class=" form__textarea" rows="6" name="text" id="text" placeholder='Опишите все ваши пожелания к заказу'> </textarea>
-
-                    </fieldset>
+                        <textarea class=" form__textarea" rows="6" name="text" id="text"> Опишите все ваши пожелания к заказу </textarea>
+                    </p>
                     <p class="form__footnote">*Поля обязательны для заполнения</p>
                     <button class="button form__button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
                 </form>
