@@ -22,7 +22,9 @@
     padding-bottom: 31px;
 
     @media (min-width: $tablet-width) {
-        flex-grow: 1;
+        width: 50%;
+        padding-top: 26px;
+        padding-bottom: 34px;
     }
 }
 
@@ -36,16 +38,35 @@
     padding-left: 30px;
     padding-right: 30px;
 
+    @media (min-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 30px;
+        padding-left: 35px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 40%;
+    }
 }
 
 .category-nav__item--interior {
-    background: $tiffany url('.././img/icon-interior.svg') no-repeat center right;
+    background: $tiffany url('.././img/icon-interior.svg') no-repeat;
     background-blend-mode: soft-light;
-    background-position-x: 91%;
+    background-position-x: 87%;
+    background-position-y: 52%;
+
+    @media (min-width: $desktop-width) {
+        background-position-x: 93%;
+    }
 }
 
 .category-nav__item--toys {
-    background: $dark-tiffany url('.././img/icon-toy.svg') no-repeat center right;
+    background: $dark-tiffany url('.././img/icon-toy.svg') no-repeat;
     background-blend-mode: soft-light;
-    background-position-x: 93%;
+    background-position-x: 88%;
+    background-position-y: 52%;
+
+    @media (min-width: $desktop-width) {
+        background-position-x: 93%;
+    }
 }

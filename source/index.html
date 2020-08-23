@@ -2,27 +2,61 @@
 <html class="page" lang="ru">
 
 <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <!-- Pixel Glass -->
+    <style>
+        HTML {
+            background-repeat: no-repeat;
+            background-position: 50% 0;
+            /* Mobile layout by default */
+            background-image: url("../source/img/Mobile-index.jpg");
+        }
+
+        /* Tablet */
+        @media (min-width: 768px) {
+            HTML {
+                /* Tablet layout */
+                background-image: url("../source/img/Tablet-index.jpg");
+            }
+        }
+
+        /* Desktop */
+        @media (min-width: 1150px) {
+            HTML {
+                /* Desktop layout */
+                background-image: url("../source/img/Desktop-index.jpg");
+            }
+        }
+
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body class="page__body">
 
-    <header class="page-header">
+    <header class="page-header bow">
         <div class="page-header__wrapper">
             <a class="page-header__logo">
-                <img class="page-header__logo-img" src="./img/logo-mobile.svg" alt="Мишка-лого" width="86" height="36">
+                <picture class="page-header__logo-img">
+                    <source media="(min-width: 1150px)" srcset="./img/logo-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
+                    <img src="./img/logo-mobile.svg" alt="Мишка-лого" width="86" height="36">
+                </picture>
             </a>
             <button class="button page-header__menu-button" type="button" aria-label="Меню"></button>
-            <nav class="page-header__nav page-header__nav--menu main-nav">
-                <ul class="main-nav__list">
-                    <li class="main-nav__item">
+            <nav class="page-header__nav page-header__nav--menu page-header__nav--index main-nav">
+                <ul class="main-nav__list main-nav__list--menu">
+                    <li class="main-nav__item main-nav__item--menu">
                         <a class="main-nav__item--link" href="catalog.html">
                             Каталог товаров
                         </a>
                     </li>
-                    <li class="main-nav__item">
+                    <li class="main-nav__item main-nav__item--menu">
                         <a class="main-nav__item--link" href="form.html">
                             Вязание на заказ
                         </a>
@@ -44,7 +78,7 @@
                     </li>
                 </ul>
             </nav>
-            <nav class="page-header__promo-menu promo-menu">
+            <nav class="page-header__promo-menu page-header__promo-menu--index promo-menu">
                 <ul class="promo-menu__list">
                     <li class="promo-menu__item">Новые поступления</li>
                     <li class="promo-menu__item">Распродажа</li>
@@ -68,19 +102,25 @@
 
     <main class="page-main">
         <h1 class="visually-hidden">Магазин Мишка - предметы интерьера ручной работы</h1>
-        <section class="featured goods-item">
+        <section class="featured goods-item wave">
             <a class="goods-item__title-link" href="">
                 <h2 class="page-main__h2 goods-item__title">Вязаные корзинки</h2>
             </a>
             <p class="featured__subtitle">ТОВАР НЕДЕЛИ</p>
             <p class="goods-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
             <dl class="goods-item__properties">
-                <dt class="goods-item__property-name">Цвет:</dt>
-                <dd class="goods-item__property-value">«Тиффани»/серый</dd>
-                <dt class="goods-item__property-name">Диаметр:</dt>
-                <dd class="goods-item__property-value">25 см</dd>
-                <dt class="goods-item__property-name">Высота:</dt>
-                <dd class="goods-item__property-value">15 см</dd>
+                <div class="goods-item__property">
+                    <dt class="goods-item__property-name">Цвет:</dt>
+                    <dd class="goods-item__property-value">«Тиффани»/серый</dd>
+                </div>
+                <div class="goods-item__property">
+                    <dt class="goods-item__property-name">Диаметр:</dt>
+                    <dd class="goods-item__property-value">25 см</dd>
+                </div>
+                <div class="goods-item__property">
+                    <dt class="goods-item__property-name">Высота:</dt>
+                    <dd class="goods-item__property-value">15 см</dd>
+                </div>
             </dl>
             <a class="goods-item__link" href="">
                 <img class="goods-item__img" src="./img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
@@ -99,7 +139,7 @@
                 <li class="advantages__item advantages__item--gift">Поставляется в подарочной упаковке</li>
             </ul>
         </section>
-        <section class="reviews">
+        <section class="reviews wave">
             <div class="reviews__wrapper slider">
                 <h2 class="page-main__h2 reviews__title">Отзывы</h2>
                 <div class="reviews__list slider__list">
@@ -138,11 +178,9 @@
 
     <footer class="page-footer">
         <div class="page-footer__wrapper">
-            <div class="page-footer__logo" href="index.html">
-                <a class="page-header__logo">
-                    <img class="page-header__logo-img" src="./img/logo-mobile.svg" alt="Мишка-лого" width="86" height="36">
-                </a>
-            </div>
+            <a class="page-footer__logo" href="index.html">
+                <img class="page-footer__logo-img" src="./img/logo-footer.svg" alt="Мишка-лого" width="102" height="35">
+            </a>
             <div class="page-footer__social social">
                 <ul class="social__list">
                     <li class="social__item">
