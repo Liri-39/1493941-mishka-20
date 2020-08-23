@@ -1,9 +1,11 @@
 .page {
+
     height: 100%;
     @include main-font;
 }
 
 .page__body {
+    max-width: 100%;
     background-color: $white;
     min-height: 100%;
     margin: 0;

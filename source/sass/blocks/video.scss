@@ -7,11 +7,29 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, min-content);
+        padding: 0 50px 33px;
     }
 
     @media (min-width: $desktop-width) {
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(3, min-content);
+    }
+}
+
+.video__border {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+        grid-column: 1/5;
+        grid-row: 2/5;
+        border: 1px solid #ECECEC;
+        padding-bottom: 45px;
+    }
+
+    @media (min-width: $desktop-width) {
+        grid-column: 5/7;
+        grid-row: 1/4;
     }
 }
 
@@ -22,10 +40,15 @@
     font-size: 17px;
     line-height: 24px;
     background: url('.././img/icon-video.svg') no-repeat 34px center;
+    order: -1;
 
     @media (min-width: $tablet-width) {
         grid-column: 1/5;
         grid-row: 2;
+        font-size: 20px;
+        padding: 40px 13px 24px 107px;
+        background-position-x: 42px;
+        background-position-y: 55%;
     }
 
     @media (min-width: $desktop-width) {
@@ -57,6 +80,9 @@
     @media (min-width: $tablet-width) {
         grid-column: 1/5;
         grid-row: 3;
+        padding: 0px 10px 40px 40px;
+        font-size: 15px;
+        line-height: 30px;
     }
 
     @media (min-width: $desktop-width) {
@@ -66,7 +92,7 @@
 }
 
 .video__button {
-    width: 100%;
+    max-width: 100%;
     margin: 0 34px;
     padding: 18px 11px;
     font-weight: bold;
@@ -80,6 +106,9 @@
     @media (min-width: $tablet-width) {
         grid-column: 1/5;
         grid-row: 4;
+        margin: 0 42px;
+        padding: 17px 11px;
+        padding-bottom: 15px;
     }
 
     @media (min-width: $desktop-width) {

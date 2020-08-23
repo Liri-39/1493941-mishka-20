@@ -1,6 +1,6 @@
 .advantages {
     color: $black;
-    margin-top: 31px;
+    margin-top: 27px;
     padding-bottom: 36px;
     padding-left: 30px;
     padding-right: 30px;
@@ -11,6 +11,7 @@
         grid-template-rows: repeat(5, min-content);
         padding-left: 50px;
         padding-right: 50px;
+        padding-top: 31px;
     }
 
     @media (min-width: $desktop-width) {
@@ -20,6 +21,8 @@
 }
 
 .advantages__title {
+    margin-bottom: 25px;
+
     @media (min-width: $tablet-width) {
         grid-column: 1/5;
         grid-row: 1;
@@ -41,6 +44,8 @@
         flex-wrap: wrap;
         grid-column: 1/5;
         grid-row: 2;
+        margin-top: 32px;
+        column-gap: 66px;
     }
 
     @media (min-width: $desktop-width) {
@@ -50,13 +55,18 @@
 }
 
 .advantages__item {
+    font-size: 17px;
+    line-height: 20px;
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 25px;
     margin-bottom: 35px;
 
     @media (min-width: $tablet-width) {
-        width: 50%;
-
+        width: 40%;
+        font-size: 20px;
+        line-height: 22px;
+        margin-top: 0px;
+        margin-bottom: 35px;
     }
 
     @media (min-width: $desktop-width) {}
@@ -67,11 +77,21 @@
     display: block;
     width: 50px;
     height: 40px;
-    margin-bottom: 26px;
+    margin-bottom: 16px;
+    margin-left: 9px;
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 26px;
+    }
+
 }
 
-.advantages__item--eco:before {
-    background: $white url(.././img/icon-feature-flower.svg) no-repeat left bottom;
+.advantages__item--eco {
+    margin-right: 63px;
+
+    &:before {
+        background: $white url(.././img/icon-feature-flower.svg) no-repeat left bottom;
+    }
 }
 
 .advantages__item--style:before {
