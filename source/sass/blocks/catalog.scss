@@ -18,6 +18,11 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    padding-top: 30px;
+
+    @media (min-width: $tablet-width) {
+        padding: 0;
+    }
 
     @media (min-width: $desktop-width) {
         display: grid;
@@ -27,6 +32,8 @@
 }
 
 .catalog__item {
+    margin-bottom: 30px;
+
     @media (min-width: $tablet-width) {
         margin-bottom: 54px
     }

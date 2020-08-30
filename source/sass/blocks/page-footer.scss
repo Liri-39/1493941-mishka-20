@@ -9,13 +9,22 @@
 
 .page-footer__wrapper {
     width: 100%;
-    @include wrapper;
+    margin-left: $wrap;
+    margin-right: $wrap;
 
     @media (min-width: $tablet-width) {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 30px;
+        padding-top: 26px;
+        margin-left: $wrap-tablet;
+        margin-right: $wrap-tablet;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-left: $wrap-desktop;
+        margin-right: $wrap-desktop;
+        padding-top: 24px;
     }
 }
 
@@ -37,7 +46,7 @@
 
     @media (min-width: $tablet-width) {
         width: auto;
-        margin-left: 83px;
+        margin-left: 75px;
     }
 }
 

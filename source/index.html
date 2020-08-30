@@ -39,7 +39,7 @@
 
 <body class="page__body">
 
-    <header class="page-header bow">
+    <header class="page-header page-header--index">
         <div class="page-header__wrapper">
             <a class="page-header__logo">
                 <picture class="page-header__logo-img">
@@ -86,8 +86,15 @@
                     </li>
                 </ul>
             </nav>
-            <div class="page-header__title"><span class="page-header__title-text">Милые штуки <br>ручной <br>работы для дома</span></div>
-            <nav class="page-header__category-nav category-nav">
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="main-title bow">
+            <div class="main-title__title">
+                <h1 class="main-title__title-text">Милые штуки <br>ручной <br>работы для дома</h1>
+            </div>
+            <nav class="main-title__category-nav category-nav">
                 <ul class="category-nav__list">
                     <li class="category-nav__item category-nav__item--interior">
                         <a class="category-nav__item-link" href="">Предметы интерьера</a>
@@ -97,11 +104,7 @@
                     </li>
                 </ul>
             </nav>
-        </div>
-    </header>
-
-    <main class="page-main">
-        <h1 class="visually-hidden">Магазин Мишка - предметы интерьера ручной работы</h1>
+        </section>
         <section class="featured goods-item wave">
             <a class="goods-item__title-link" href="">
                 <h2 class="page-main__h2 goods-item__title">Вязаные корзинки</h2>
@@ -123,7 +126,11 @@
                 </div>
             </dl>
             <a class="goods-item__link" href="">
-                <img class="goods-item__img" src="./img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
+                <picture>
+                    <source media="(min-width: 1150px)" srcset="./img/triple-set-desktop@1x.jpg 1x, ./img/triple-set-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/triple-set-tablet@1x.jpg 1x, ./img/triple-set-tablet@2x.jpg 2x">
+                    <img class="goods-item__img" src="./img/triple-set-mobile@1x.jpg" srcset="./img/triple-set-mobile@1x.jpg  1x, ./img/triple-set-mobile@2x.jpg  2x" alt="Вязаные корзинки">
+                </picture>
             </a>
             <p class="goods-item__price">Цена: <span class="goods-item__price--value">990 руб.</span></p>
             <a class="button goods-item__button" href="">ЗАКАЗАТЬ</a>
@@ -131,16 +138,16 @@
         <section class="advantages">
             <h2 class="page-main__h2 advantages__title">Коротко о нас:</h2>
             <ul class="advantages__list">
-                <li class="advantages__item advantages__item--eco">Экологически чистые материалы</li>
-                <li class="advantages__item advantages__item--style">Скандинавский стиль по российской цене</li>
-                <li class="advantages__item advantages__item--like">Увеличивает лайки на фотографиях</li>
-                <li class="advantages__item advantages__item--love">Связано вручную с любовью и умилением</li>
-                <li class="advantages__item advantages__item--native">Поддержка отечественного производителя</li>
-                <li class="advantages__item advantages__item--gift">Поставляется в подарочной упаковке</li>
+                <li class="advantages__item advantages__item--eco">Экологически<br>чистые материалы</li>
+                <li class="advantages__item advantages__item--style">Скандинавский стиль<br>по российской цене</li>
+                <li class="advantages__item advantages__item--like">Увеличивает лайки<br>на фотографиях</li>
+                <li class="advantages__item advantages__item--love">Связано вручную с<br>любовью и умилением</li>
+                <li class="advantages__item advantages__item--native">Поддержка отечественного<br>производителя</li>
+                <li class="advantages__item advantages__item--gift">Поставляется в<br>подарочной упаковке</li>
             </ul>
         </section>
-        <section class="reviews wave">
-            <div class="reviews__wrapper slider">
+        <section class="reviews">
+            <div class="reviews__wrapper slider wave">
                 <h2 class="page-main__h2 reviews__title">Отзывы</h2>
                 <div class="reviews__list slider__list">
                     <blockquote class="reviews__item slider__item">
@@ -166,10 +173,16 @@
                 <a class="contacts__content contacts__content--mail" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
             </p>
             <p class="contacts__item contacts__item--even">адрес:
-                <span class="contacts__content contacts__content--address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+                <span class="contacts__content contacts__content--address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
             </p>
+            <div class="contacts__map">
+                <picture>
+                    <source media="(min-width: 1150px)" srcset="./img/map-desktop@1x.jpg 1x, ./img/map-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/map-tablet@1x.jpg 1x, ./img/map-tablet@2x.jpg 2x">
+                    <img src="./img/map-mobile@1x.jpg" srcset="./img/map-mobile@1x.jpg 1x, ./img/map-mobile@2x.jpg 2x" alt="Мы на карте">
+                </picture>
+            </div>
 
-            <img class="contacts__map" src="./img/map-mobile@1x.jpg">
             <p class="contacts__item contacts__item--button">
                 <a class="button contacts__button" href="">Напишите нам</a>
             </p>

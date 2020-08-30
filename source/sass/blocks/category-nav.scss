@@ -1,8 +1,13 @@
 .category-nav {
     @media (min-width: $tablet-width) {
         position: relative;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: $wrap-tablet;
+        padding-right: $wrap-tablet;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding-left: $wrap-desktop;
+        padding-right: $wrap-desktop;
     }
 }
 

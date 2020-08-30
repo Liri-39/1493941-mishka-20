@@ -7,11 +7,17 @@
         position: absolute;
         bottom: -20px;
         background-image: url(.././img/bg-zigzag-fill.svg);
-        background-position-x: center;
-        background-position-y: bottom;
-        background-repeat-x: repeat;
-        background-repeat-y: no-repeat;
+        background-position-x: 0px;
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
+
+    @media (min-width: $desktop-width) {
+        background-size: 50%;
+        height: 35px;
+        background-repeat: repeat;
+    }
+
 }
 
 /*.bow {
