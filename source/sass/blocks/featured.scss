@@ -2,20 +2,25 @@
     margin-top: 31px;
     margin-bottom: 27px;
     padding-bottom: 36px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: $wrap;
+    padding-right: $wrap;
 
     @media (min-width: $tablet-width) {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: min-content min-content 1fr min-content min-content;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: $wrap-tablet;
+        padding-right: $wrap-tablet;
+        padding-bottom: 40px;
     }
 
     @media (min-width: $desktop-width) {
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: min-content min-content 1fr min-content min-content;
+        padding-bottom: 39px;
+        padding-left: $wrap-desktop;
+        padding-right: $wrap-desktop;
+        margin-top: 29px;
     }
 }
 

@@ -13,19 +13,3 @@
     box-shadow: 0px 1px 0px #ECECEC,
         inset 0px 1px 0px #ECECEC;
 }
-
-
-@mixin wrapper {
-    margin-left: 30px;
-    margin-right: 30px;
-
-    @media (min-width: $tablet-width) {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-
-    @media (min-width: $desktop-width) {
-        margin-left: calc(50px + ((100VW - 100px)/6));
-        margin-right: calc(50px + ((100VW - 100px)/6));
-    }
-}

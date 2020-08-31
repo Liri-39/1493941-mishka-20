@@ -8,7 +8,7 @@ $dark-tiffany:#56C3B2;
 $black:#000000;
 $greyish-black:#444444;
 $ligther-grey:#ECECEC;
-$background-grey:f9f9f9;
+$backgrey:#f9f9f9;
 
 
 // Viewports
@@ -16,3 +16,10 @@ $background-grey:f9f9f9;
 $tablet-width: 768px;
 $desktop-width: 1150px;
 $mobile-width-only: 767px;
+$desktop-max-width: 1350px;
+
+
+// wrappers
+$wrap: 30px;
+$wrap-tablet: 50px;
+$wrap-desktop: calc(50px + ((100VW - 1150px)/2));

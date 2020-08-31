@@ -1,5 +1,5 @@
 .video {
-    padding: 0 30px 33px;
+    padding: 0 $wrap 33px;
     @include center-x;
     flex-wrap: wrap;
 
@@ -7,12 +7,13 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, min-content);
-        padding: 0 50px 33px;
+        padding: 0 $wrap-tablet 33px;
     }
 
     @media (min-width: $desktop-width) {
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(3, min-content);
+        padding: 0 $wrap-desktop 62px;
     }
 }
 
@@ -30,6 +31,9 @@
     @media (min-width: $desktop-width) {
         grid-column: 5/7;
         grid-row: 1/4;
+        padding-left: 60px;
+        padding-top: 40px;
+        padding-right: 57px;
     }
 }
 
@@ -54,6 +58,9 @@
     @media (min-width: $desktop-width) {
         grid-column: 5/7;
         grid-row: 1;
+        padding: 55px 0px 26px 0px;
+        background-position-x: 0;
+        background-position-y: 0;
     }
 }
 
@@ -68,6 +75,7 @@
     @media (min-width: $desktop-width) {
         grid-column: 1/5;
         grid-row: 1/4;
+        padding-right: 15px;
     }
 }
 
@@ -88,6 +96,7 @@
     @media (min-width: $desktop-width) {
         grid-column: 5/7;
         grid-row: 2;
+        padding: 0px 0px 52px 0px;
     }
 }
 
@@ -116,6 +125,6 @@
         grid-row: 3;
         align-self: center;
         justify-self: center;
-        width: auto;
+        width: 100%;
     }
 }

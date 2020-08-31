@@ -1,28 +1,36 @@
-/*.wave::after {
+.wave::after {
 
     content: "";
     display: block;
     width: 100%;
-    height: 25px;
+    height: 10px;
     position: absolute;
-    bottom: -30px;
+    left: 0;
+    bottom: -10px;
     background-image: url('.././img/bg-zigzag-line.svg');
-    background-position-x: center;
-    background-position-y: bottom;
-    background-repeat-x: repeat;
-    background-repeat-y: no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100%;
 
-    @media (min-width: $tablet-width) {}
+    @media (min-width: $tablet-width) {
+        //width: 115%;
+        height: 20px;
+        bottom: -25px;
+        background-size: 100%;
+    }
 
     @media (min-width: $desktop-width) {
-        bottom: -53px;
+        bottom: -61px;
+        width: 1050px;
+        height: 32px;
+        left: $wrap-desktop;
     }
-}*/
+}
 
-.wave {
+/*.wave {
     border-bottom: 10px solid transparent;
     border-image-source: url('.././img/bg-zigzag-line.svg');
-    border-image-slice: 50;
+    border-image-slice: 40;
+    border-image-width: 3%;
 
     @media (min-width: $tablet-width) {
         border-bottom: 20px solid transparent;
@@ -31,4 +39,4 @@
     @media (min-width: $desktop-width) {
         border-bottom: 30px solid transparent;
     }
-}
+}*/

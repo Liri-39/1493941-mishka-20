@@ -49,37 +49,50 @@
     font-size: 13px;
     line-height: 24px;
     color: $greyish-black;
-    @include wrapper;
+    margin-left: $wrap;
+    margin-right: $wrap;
 
     @media (min-width: $tablet-width) {
         margin-top: 66px;
         margin-bottom: 60px;
         font-size: 17px;
         line-height: 30px;
+        margin-left: $wrap-tablet;
+        margin-right: $wrap-tablet;
     }
 
-    @media (min-width: $desktop-width) {}
+    @media (min-width: $desktop-width) {
+        margin-left: $wrap-desktop;
+        margin-right: $wrap-desktop;
+        padding-left: 175px;
+        padding-right: 175px;
+        margin-top: 117px;
+    }
 }
 
 .page-main__order-form {
-    margin: 0 30px;
+    margin: 0 $wrap;
     padding: 0;
     padding-top: 19px;
     padding-bottom: 55px;
 
     @media (min-width: $tablet-width) {
-        padding-top: 21px;
+        padding-top: 18px;
         margin: 0;
+        padding-bottom: 20px;
     }
 }
 
 .page-main__catalog {
     margin: 0;
-    @include wrapper;
+    margin-left: $wrap;
+    margin-right: $wrap;
 
     @media (min-width: $tablet-width) {
-        margin: 0 50px;
+        margin: 0 $wrap-tablet;
     }
 
-    @media (min-width: $desktop-width) {}
+    @media (min-width: $desktop-width) {
+        margin: 0 $wrap-desktop;
+    }
 }
