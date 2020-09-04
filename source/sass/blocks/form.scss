@@ -320,17 +320,37 @@
 .form__input--ico-phone {
     display: block;
     position: absolute;
-    top: 27%;
-    right: 10%;
     fill: rgba($black, 0.2);
+    top: 14%;
+    right: 3%;
+
+    @media (min-width: $tablet-width) {
+        top: 27%;
+        right: 10%;
+    }
+
+    @media (min-width: $desktop-width) {
+        top: 26%;
+        right: 20%;
+    }
 }
 
 .form__input--ico-mail {
     display: block;
     position: absolute;
-    top: 62%;
-    right: 10%;
     fill: rgba($black, 0.2);
+    top: 66%;
+    right: 1%;
+
+    @media (min-width: $tablet-width) {
+        top: 62%;
+        right: 10%;
+    }
+
+    @media (min-width: $desktop-width) {
+        right: 20%;
+    }
+
 }
 
 .form__input--text {

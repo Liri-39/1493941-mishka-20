@@ -14,7 +14,7 @@
     @media (min-width: $desktop-width) {
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(3, min-content);
-        padding: 0 $wrap-desktop 62px;
+        padding: 0 $wrap-desktop 82px;
     }
 }
 
@@ -67,16 +67,28 @@
     top: 31px;
     left: 42px;
     fill: $tiffany;
+
+    @media (min-width: $desktop-width) {
+        top: 0px;
+        left: 0px;
+    }
 }
 
 .video__play {
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 24%;
-    left: 43.5%;
-    border: none;
-    background-color: transparent;
+    @media (min-width: $tablet-width) {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 24%;
+        left: 43.5%;
+        border: none;
+        background-color: transparent;
+    }
+
+    @media (min-width: $desktop-width) {
+        top: 37%;
+        left: 30%;
+    }
 }
 
 .video__play-ico {}

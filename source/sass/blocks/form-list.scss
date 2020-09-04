@@ -93,6 +93,7 @@
 .form-list__radio:checked + label::before {
     background-image: url('data:image/svg+xml,%3Csvg  viewBox="0 0 38 40" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M18.8108 1.45131C28.3791 1.45131 36.2248 9.64455 36.2248 19.8643C36.2248 30.0839 28.3791 38.2775 18.8108 38.2775C9.24251 38.2775 1.39686 30.0839 1.39686 19.8643C1.39686 9.64455 9.24249 1.45131 18.8108 1.45131Z" stroke="%23444444" stroke-width="2"/%3E%3C/svg%3E '), url('data:image/svg+xml,%3Csvg  viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M7.8136 0.0700279C11.8952 0.0700279 15.204 3.55814 15.204 7.86129C15.204 12.1643 11.8952 15.6524 7.8136 15.6524C3.73201 15.6524 0.423224 12.1643 0.423224 7.86129C0.423224 3.55814 3.73201 0.0700279 7.8136 0.0700279Z" fill="%2362D1BA"/%3E%3C/svg%3E');
     background-position: 0 0, 50% 50%;
+    background-size: 100%, 42%;
 
 
     @media (min-width: $tablet-width) {
@@ -100,7 +101,7 @@
         top: -19px;
         width: 54px;
         height: 56px;
-        background-size: 100%, 42%;
+
     }
 }
 
@@ -127,6 +128,7 @@
     background-image: url("data:image/svg+xml,%3Csvg  viewBox='0 0 38 39' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='35.9414' height='37' stroke='%23444444' stroke-width='2'/%3E%3C/svg%3E ");
     background-repeat: no-repeat;
     background-position: 0 0;
+    background-size: 100%, 45%;
 
     @media (min-width: $tablet-width) {
         left: -81px;
@@ -156,10 +158,10 @@
 .form-list__checkbox-name {
     position: relative;
     display: inline-block;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 19px;
     line-height: 18px;
-    margin-left: 62px;
+    margin-left: 61px;
 
     @media (min-width: $tablet-width) {
         margin-left: 82px;

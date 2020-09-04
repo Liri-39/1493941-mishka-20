@@ -48,14 +48,21 @@
 }
 
 .contacts__title:after {
-    content: '';
-    display: block;
-    width: 47px;
-    height: 82px;
-    position: absolute;
-    right: 4px;
-    bottom: -7px;
-    background-image: url('./../img/icon-flag.svg');
+    @media (min-width: $tablet-width) {
+        content: '';
+        display: block;
+        width: 47px;
+        height: 82px;
+        position: absolute;
+        right: 4px;
+        bottom: -7px;
+        background-image: url('./../img/icon-flag.svg');
+    }
+
+    @media (min-width: $desktop-width) {
+        left: -112px;
+        bottom: 26px;
+    }
 }
 
 .contacts__item {
