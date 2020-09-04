@@ -16,7 +16,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 26px;
+        padding-top: 25px;
         margin-left: $wrap-tablet;
         margin-right: $wrap-tablet;
     }
@@ -46,7 +46,7 @@
 
     @media (min-width: $tablet-width) {
         width: auto;
-        margin-left: 75px;
+        margin-left: 72px;
     }
 }
 
