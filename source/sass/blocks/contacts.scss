@@ -33,6 +33,7 @@
         font-size: 43px;
         line-height: 50px;
         margin-bottom: 46px;
+        position: relative;
     }
 
     @media (min-width: $desktop-width) {
@@ -43,6 +44,24 @@
         line-height: 57px;
         padding-top: 80px;
         padding-bottom: 0;
+    }
+}
+
+.contacts__title:after {
+    @media (min-width: $tablet-width) {
+        content: '';
+        display: block;
+        width: 47px;
+        height: 82px;
+        position: absolute;
+        right: 4px;
+        bottom: -7px;
+        background-image: url('./../img/icon-flag.svg');
+    }
+
+    @media (min-width: $desktop-width) {
+        left: -112px;
+        bottom: 26px;
     }
 }
 

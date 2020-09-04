@@ -2,6 +2,7 @@
     padding: 0 $wrap 33px;
     @include center-x;
     flex-wrap: wrap;
+    position: relative;
 
     @media (min-width: $tablet-width) {
         display: grid;
@@ -13,7 +14,7 @@
     @media (min-width: $desktop-width) {
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(3, min-content);
-        padding: 0 $wrap-desktop 62px;
+        padding: 0 $wrap-desktop 82px;
     }
 }
 
@@ -39,33 +40,63 @@
 
 .video__title {
     width: 100%;
+    position: relative;
     padding: 22px 13px 27px 91px;
     font-weight: bold;
     font-size: 17px;
     line-height: 24px;
-    background: url('.././img/icon-video.svg') no-repeat 34px center;
+    /*background: url('.././img/icon-video.svg') no-repeat 34px center;*/
     order: -1;
 
     @media (min-width: $tablet-width) {
         grid-column: 1/5;
         grid-row: 2;
         font-size: 20px;
-        padding: 40px 13px 24px 107px;
-        background-position-x: 42px;
-        background-position-y: 55%;
+        padding: 39px 13px 24px 107px;
     }
 
     @media (min-width: $desktop-width) {
         grid-column: 5/7;
         grid-row: 1;
         padding: 55px 0px 26px 0px;
-        background-position-x: 0;
-        background-position-y: 0;
     }
 }
 
+.video__ico {
+    position: absolute;
+    top: 31px;
+    left: 42px;
+    fill: $tiffany;
+
+    @media (min-width: $desktop-width) {
+        top: 0px;
+        left: 0px;
+    }
+}
+
+.video__play {
+    @media (min-width: $tablet-width) {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 24%;
+        left: 43.5%;
+        border: none;
+        background-color: transparent;
+    }
+
+    @media (min-width: $desktop-width) {
+        top: 37%;
+        left: 30%;
+    }
+}
+
+.video__play-ico {}
+
 .video__video {
     width: 100%;
+    display: block;
+    position: relative;
 
     @media (min-width: $tablet-width) {
         grid-column: 1/5;

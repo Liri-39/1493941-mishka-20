@@ -1,0 +1,56 @@
+.size-box {
+    width: 100%;
+    margin: 0;
+    margin-top: 22px;
+}
+
+.size-box__list {
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 31px;
+    flex-wrap: wrap;
+}
+
+.size-box__item {
+    display: flex;
+    margin-right: 7px;
+    flex: 1;
+}
+
+.size-box__item:last-child {
+    margin-right: 0;
+}
+
+.size-box__size-name {
+    width: 100%;
+    border: 2px solid rgba($greyish-black, 0.1);
+    @include center-x;
+
+    &:hover {
+        border: 2px solid rgba($greyish-black, 0.3);
+    }
+
+    padding: 18px 0;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.size-box__checkbox:checked + .size-box__size-name {
+    border: 2px solid $tiffany;
+}
+
+.size-box__button {
+    width: 100%;
+    border: none;
+    background-color: $tiffany;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    color: $white;
+    font-size: 17px;
+    line-height: 16px;
+    text-transform: uppercase;
+}

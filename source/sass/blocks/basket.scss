@@ -1,5 +1,7 @@
 .basket__link {
-    background: url('.././img/icon-cart.svg') no-repeat center left;
+    /*background-image: url('../img/sprite.svg');
+background-repeat: no-repeat;
+background-position: center left;*/
     padding-left: 46px;
 
     @media (min-width: $desktop-width) {
@@ -12,9 +14,18 @@
 }
 
 .basket {
+    position: relative;
     padding-top: 29px;
 
     @media (min-width: $tablet-width) {
         padding-top: 33px;
     }
+}
+
+.basket--ico {
+    display: block;
+    position: absolute;
+    top: 41%;
+    left: 30px;
+    fill: rgba($black, 0.2);
 }
