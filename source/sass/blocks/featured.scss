@@ -1,50 +1,50 @@
 .featured {
-    margin-top: 31px;
-    margin-bottom: 27px;
-    padding-bottom: 36px;
-    padding-left: $wrap;
-    padding-right: $wrap;
+  margin-top: 31px;
+  margin-bottom: 27px;
+  padding-bottom: 36px;
+  padding-left: $wrap;
+  padding-right: $wrap;
 
-    @media (min-width: $tablet-width) {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: min-content min-content 1fr min-content min-content;
-        padding-left: $wrap-tablet;
-        padding-right: $wrap-tablet;
-        padding-bottom: 40px;
-    }
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: min-content min-content 1fr min-content min-content;
+    padding-left: $wrap-tablet;
+    padding-right: $wrap-tablet;
+    padding-bottom: 40px;
+  }
 
-    @media (min-width: $desktop-width) {
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: min-content min-content 1fr min-content min-content;
-        padding-bottom: 39px;
-        padding-left: $wrap-desktop;
-        padding-right: $wrap-desktop;
-        margin-top: 29px;
-    }
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: min-content min-content 1fr min-content min-content;
+    padding-bottom: 39px;
+    padding-left: $wrap-desktop;
+    padding-right: $wrap-desktop;
+    margin-top: 29px;
+  }
 }
 
 .featured__subtitle {
-    color: $tiffany;
-    font-weight: bold;
-    line-height: 20px;
-    text-transform: uppercase;
+  color: $tiffany;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 4px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 4/5;
+    grid-row: 1;
     margin: 0;
-    margin-top: 4px;
+    padding: 26px 25px 0 65px;
+    text-align: center;
+    line-height: 17px;
+  }
 
-    @media (min-width: $tablet-width) {
-        grid-column: 4/5;
-        grid-row: 1;
-        margin: 0;
-        padding: 26px 25px 0 65px;
-        text-align: center;
-        line-height: 17px;
-    }
-
-    @media (min-width: $desktop-width) {
-        grid-column: 1/2;
-        grid-row: 1;
-        padding: 0 38px 16px 24px;
-        align-self: end;
-    }
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 1;
+    padding: 0 38px 16px 24px;
+    align-self: end;
+  }
 }

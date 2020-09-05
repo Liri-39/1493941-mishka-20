@@ -1,14 +1,15 @@
 // Colors
 
 $white:#ffffff;
-$ligthgrey:#F1F1F1;
-$grey:#C7C7C7;
-$tiffany:#63D1BB;
-$dark-tiffany:#56C3B2;
+$ligthgrey:#f1f1f1;
+$grey:#c7c7c7;
+$tiffany:#63d1bb;
+$dark-tiffany:#56c3b2;
 $black:#000000;
 $greyish-black:#444444;
-$ligther-grey:#ECECEC;
+$ligther-grey:#ececec;
 $backgrey:#f9f9f9;
+$g:#c6c6c6;
 
 
 // Viewports
@@ -22,4 +23,4 @@ $desktop-max-width: 1350px;
 // wrappers
 $wrap: 30px;
 $wrap-tablet: 50px;
-$wrap-desktop: calc(50px + ((100VW - 1150px)/2));
+$wrap-desktop: calc(50px + ((100vw - 1150px) / 2));

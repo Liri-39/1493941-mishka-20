@@ -1,44 +1,44 @@
 .catalog {
-    margin-bottom: 54px;
-    @include center-x;
+  margin-bottom: 54px;
 
-    @media (min-width: $tablet-width) {
-        padding-top: 75px;
-        margin-bottom: 0;
-    }
+  @include center-x;
 
-    @media (min-width: $desktop-width) {
-        padding-top: 129px;
+  @media (min-width: $tablet-width) {
+    padding-top: 75px;
+    margin-bottom: 0;
+  }
 
-    }
+  @media (min-width: $desktop-width) {
+    padding-top: 129px;
+  }
 }
 
 .catalog__list {
-    width: 100%;
-    list-style: none;
-    margin: 0;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
     padding: 0;
-    padding-top: 30px;
+  }
 
-    @media (min-width: $tablet-width) {
-        padding: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 52px;
-    }
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 52px;
+  }
 }
 
 .catalog__item {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
-    @media (min-width: $tablet-width) {
-        margin-bottom: 54px
-    }
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
 
-    @media (min-width: $desktop-width) {
-        margin-bottom: 56px;
-    }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }

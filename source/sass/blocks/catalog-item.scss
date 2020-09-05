@@ -1,139 +1,136 @@
 .catalog-item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 
-
-
-    @media (min-width: $tablet-width) {
-        display: flex;
-    }
-
-    @media (min-width: $desktop-width) {
-        flex-direction: column;
-    }
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .catalog-item__link {
-    @include center-x;
-    overflow: hidden;
+  @include center-x;
+  overflow: hidden;
 
-    & picture {
-        width: 100%;
-    }
+  & picture {
+    width: 100%;
+  }
 
-    @media (min-width: $tablet-width) {
-        width: 50%;
-    }
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 
-    @media (min-width: $desktop-width) {
-        width: 100%;
-    }
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .catalog-item__img {
-    background-color: $ligthgrey;
-    width: auto;
-    display: block;
+  background-color: $ligthgrey;
+  width: auto;
+  display: block;
 
-    @media (min-width: $tablet-width) {
-        width: 100%;
-        height: 100%;
-    }
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .catalog-item__title {
-    margin: 0;
-    display: flex;
-    text-decoration: none;
-    color: $black;
-    font-weight: bold;
-    width: 100%;
-    padding-bottom: 7px;
+  margin: 0;
+  display: flex;
+  text-decoration: none;
+  color: $black;
+  font-weight: bold;
+  width: 100%;
+  padding-bottom: 7px;
 
-    @media (min-width: $tablet-width) {
-        font-size: 20px;
-        line-height: 24px;
-        padding-right: 36px;
-    }
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    padding-right: 36px;
+  }
 
-    @media (min-width: $desktop-width) {
-        padding-right: 15px;
-    }
+  @media (min-width: $desktop-width) {
+    padding-right: 15px;
+  }
 }
 
 .catalog-item__desc {
-    margin: 0;
-    font-size: 13px;
+  margin: 0;
+  font-size: 13px;
+  line-height: 30px;
+  color: $greyish-black;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
     line-height: 30px;
-    color: $greyish-black;
-    width: 100%;
+  }
 
-    @media (min-width: $tablet-width) {
-        font-size: 15px;
-        line-height: 30px;
-    }
-
-    @media (min-width: $desktop-width) {
-        margin-bottom: 9px;
-    }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 9px;
+  }
 }
 
 .catalog-item__price {
-    margin: 0;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 24px;
+  margin: 0;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
 
-    @media (min-width: $tablet-width) {
-        font-size: 17px;
-    }
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .catalog-item__price-wrapper {
-    width: 100%;
-    display: flex;
-    padding-top: 23px;
-    border-top: 1px solid $ligther-grey;
-    margin-top: auto;
+  width: 100%;
+  display: flex;
+  padding-top: 23px;
+  border-top: 1px solid $ligther-grey;
+  margin-top: auto;
 
-    @media (min-width: $desktop-width) {
-        padding-top: 25px;
-    }
+  @media (min-width: $desktop-width) {
+    padding-top: 25px;
+  }
 }
 
 .catalog-item__info {
-    padding: 28px 28px 27px;
-    display: flex;
-    flex-direction: column;
+  padding: 28px 28px 27px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid $ligther-grey;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba($black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba($black, 0.1);
+  }
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $ligther-grey;
+    justify-content: flex-start;
+    width: 50%;
+    padding: 27px 32px 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 33px 26px 26px;
+    flex-grow: 1;
     width: 100%;
-    border: 1px solid #ECECEC;
-
-    &:hover {
-        box-shadow: 0px 6px 10px rgba($black, 0.1);
-    }
-
-    &:active {
-        box-shadow: 0px 3px 5px rgba($black, 0.1);
-    }
-
-    @media (min-width: $tablet-width) {
-        border: 1px solid $ligther-grey;
-        justify-content: flex-start;
-        width: 50%;
-        padding: 27px 32px 24px;
-    }
-
-    @media (min-width: $desktop-width) {
-        padding: 27px 33px 26px 26px;
-        flex-grow: 1;
-        width: 100%;
-    }
+  }
 }
 
 .catalog-item__button {
-    margin: 0;
-    background: url(".././img/icon-cart.svg") no-repeat center 0%;
-    border: none;
-    margin-left: auto;
-    cursor: pointer;
-    width: 20px;
-    opacity: 0.2;
+  margin: 0;
+  background: url(".././img/icon-cart.svg") no-repeat center 0%;
+  border: none;
+  margin-left: auto;
+  cursor: pointer;
+  width: 20px;
+  opacity: 0.2;
 }
