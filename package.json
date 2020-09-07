@@ -19,8 +19,6 @@
     "gulp-webp": "^4.0.1",
     "imagemin": "^7.0.1",
     "imagemin-mozjpeg": "^9.0.0",
-    "imagemin-pngquant": "^9.0.0",
-    "imagemin-webp": "^6.0.0",
     "stylelint": "13.6.1",
     "stylelint-config-htmlacademy": "0.1.4"
   },
@@ -33,19 +31,22 @@
     "start": "gulp"
   },
   "browserslist": [
-        "last 2 versions",
-        "not dead",
-        "not ie <= 11"
-    ],
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
   "editorconfig-cli": [
-        "*.json",
-        "*.js",
-        "source/*.html",
-        "source/js/**/*.js",
-        "source/img/**/*.svg",
-        "source/sass/**/*.scss"
-    ],
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.scss"
+  ],
   "engines": {
     "node": "12.18.2"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2"
   }
 }
