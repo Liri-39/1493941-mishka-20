@@ -1,77 +1,77 @@
 .category-nav {
-    @media (min-width: $tablet-width) {
-        position: relative;
-        padding-left: $wrap-tablet;
-        padding-right: $wrap-tablet;
-    }
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-left: $wrap-tablet;
+    padding-right: $wrap-tablet;
+  }
 
-    @media (min-width: $desktop-width) {
-        padding-left: $wrap-desktop;
-        padding-right: $wrap-desktop;
-    }
+  @media (min-width: $desktop-width) {
+    padding-left: $wrap-desktop;
+    padding-right: $wrap-desktop;
+  }
 }
 
 
 .category-nav__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
-    @media (min-width: $tablet-width) {
-        display: flex;
-    }
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .category-nav__item {
-    padding-top: 24px;
-    padding-bottom: 31px;
+  padding-top: 24px;
+  padding-bottom: 31px;
 
-    @media (min-width: $tablet-width) {
-        width: 50%;
-        padding-top: 26px;
-        padding-bottom: 34px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    padding-top: 26px;
+    padding-bottom: 34px;
+  }
 }
 
 .category-nav__item-link {
-    display: flex;
-    width: 50%;
-    color: $white;
-    font-weight: bold;
-    font-size: 19px;
-    text-decoration: none;
-    padding-left: 30px;
-    padding-right: 30px;
+  display: flex;
+  width: 50%;
+  color: $white;
+  font-weight: bold;
+  font-size: 19px;
+  text-decoration: none;
+  padding-left: 30px;
+  padding-right: 30px;
 
-    @media (min-width: $tablet-width) {
-        font-size: 20px;
-        line-height: 30px;
-        padding-left: 35px;
-    }
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 35px;
+  }
 
-    @media (min-width: $desktop-width) {
-        width: 40%;
-    }
+  @media (min-width: $desktop-width) {
+    width: 40%;
+  }
 }
 
 .category-nav__item--interior {
-    background: $tiffany url('.././img/icon-interior.svg') no-repeat;
-    background-blend-mode: soft-light;
-    background-position-x: 87%;
-    background-position-y: 52%;
+  background: $tiffany url(".././img/icon-interior.svg") no-repeat;
+  background-blend-mode: soft-light;
+  background-position-x: 87%;
+  background-position-y: 52%;
 
-    @media (min-width: $desktop-width) {
-        background-position-x: 93%;
-    }
+  @media (min-width: $desktop-width) {
+    background-position-x: 93%;
+  }
 }
 
 .category-nav__item--toys {
-    background: $dark-tiffany url('.././img/icon-toy.svg') no-repeat;
-    background-blend-mode: soft-light;
-    background-position-x: 88%;
-    background-position-y: 52%;
+  background: $dark-tiffany url(".././img/icon-toy.svg") no-repeat;
+  background-blend-mode: soft-light;
+  background-position-x: 88%;
+  background-position-y: 52%;
 
-    @media (min-width: $desktop-width) {
-        background-position-x: 93%;
-    }
+  @media (min-width: $desktop-width) {
+    background-position-x: 93%;
+  }
 }

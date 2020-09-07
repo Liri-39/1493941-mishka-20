@@ -1,17 +1,18 @@
 .page {
-    min-width: 320px;
-    height: 100%;
-    @include main-font;
+  min-width: 320px;
+  height: 100%;
+
+  @include main-font;
 }
 
 .page__body {
-    max-width: 100%;
-    background-color: $white;
-    min-height: 100%;
-    margin: 0;
-    color: $black;
+  max-width: 100%;
+  background-color: $white;
+  min-height: 100%;
+  margin: 0;
+  color: $black;
 }
 
 .page__body * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }

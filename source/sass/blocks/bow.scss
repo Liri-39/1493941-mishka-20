@@ -1,36 +1,35 @@
 .bow::after {
-    @media (min-width: $tablet-width) {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 35px;
-        position: absolute;
-        bottom: -20px;
-        background-image: url(.././img/bg-zigzag-fill.svg);
-        background-position-x: 0px;
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
+  @media (min-width: $tablet-width) {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    bottom: -20px;
+    background-image: url(".././img/bg-zigzag-fill.svg");
+    background-position-x: 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
 
-    @media (min-width: $desktop-width) {
-        background-size: 50%;
-        height: 35px;
-        background-repeat: repeat;
-    }
-
+  @media (min-width: $desktop-width) {
+    background-size: 50%;
+    height: 35px;
+    background-repeat: repeat;
+  }
 }
 
 /*.bow {
-    border-bottom: 10px solid transparent;
-    border-image-source: url('.././img/bg-zigzag-fill.svg');
-    border-image-slice: 50;
+  border-bottom: 10px solid transparent;
+  border-image-source: url('.././img/bg-zigzag-fill.svg');
+  border-image-slice: 50;
 
-    @media (min-width: $tablet-width) {
-        border-bottom: 20px solid transparent;
-    }
+  @media (min-width: $tablet-width) {
+    border-bottom: 20px solid transparent;
+  }
 
-    @media (min-width: $desktop-width) {
-        border-bottom: 30px solid transparent;
-    }
+  @media (min-width: $desktop-width) {
+    border-bottom: 30px solid transparent;
+  }
 }
 */
