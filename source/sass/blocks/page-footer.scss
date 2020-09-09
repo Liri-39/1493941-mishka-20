@@ -42,6 +42,20 @@
   }
 }
 
+.page-footer__logo-img {
+  width: 102px;
+  height: 35px;
+
+  &:hover {
+    color: $ligth-tiffany;
+  }
+
+  &:active {
+    color: $ligth-tiffany;
+    opacity: 0.3;
+  }
+}
+
 .page-footer__social {
   width: 100%;
   display: flex;

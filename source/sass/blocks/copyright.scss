@@ -36,5 +36,14 @@
 }
 
 .copyright__icon {
-  fill: $tiffany;
+  color: $tiffany;
+
+  &:hover {
+    color: $ligth-tiffany;
+  }
+
+  &:active {
+    color: $ligth-tiffany;
+    opacity: 0.3;
+  }
 }
