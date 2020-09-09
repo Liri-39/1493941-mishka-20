@@ -1,5 +1,6 @@
 .add-basket {
   width: 100vw;
+  height: 336px;
   max-width: 100%;
   border: 1px solid $g;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
@@ -9,8 +10,14 @@
   padding-bottom: 46px;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  background-color: $white;
 
-  @include center-x;
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 566px;
+  }
 }
 
 .add-basket__title {

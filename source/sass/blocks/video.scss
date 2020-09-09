@@ -3,25 +3,49 @@
 
   @include center-x;
   flex-wrap: wrap;
-  position: relative;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, min-content);
-    padding: 0 $wrap-tablet 33px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-left: $wrap-tablet;
+    margin-right: $wrap-tablet;
+    margin-bottom: 33px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, min-content);
-    padding: 0 $wrap-desktop 82px;
+    padding: 0;
+    margin-left: $wrap-desktop;
+    margin-right: $wrap-desktop;
+    margin-bottom: 82px;
+  }
+}
+
+.video__video {
+  width: 100%;
+  display: block;
+  position: relative;
+
+  @media (min-width: $tablet-width) {}
+
+  @media (min-width: $desktop-width) {
+    width: 65%;
   }
 }
 
 .video__border {
   display: flex;
   flex-direction: column;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba($black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba($black, 0.1);
+  }
 
   @media (min-width: $tablet-width) {
     grid-column: 1/5;
@@ -31,10 +55,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 5/7;
-    grid-row: 1/4;
-    padding-left: 60px;
-    padding-top: 40px;
+    width: 20%;
+    flex: 1;
+    /*grid-column: 5/7;
+    grid-row: 1/4;*/
+    padding-left: 78px;
+    padding-top: 41px;
     padding-right: 57px;
   }
 }
@@ -76,37 +102,35 @@
 }
 
 .video__play {
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:focus {
+    transform: scale(0.8);
+    opacity: 0.7;
+    background-color: $white;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
     margin: 0;
     position: absolute;
-    top: 24%;
-    left: 43.5%;
+    top: 41%;
+    left: 42%;
     border: none;
     background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
-    top: 37%;
-    left: 30%;
+    top: 41%;
+    left: 42%;
   }
 }
 
-.video__video {
+.video__img {
   width: 100%;
   display: block;
-  position: relative;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 1/5;
-    grid-row: 1;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-column: 1/5;
-    grid-row: 1/4;
-    padding-right: 15px;
-  }
 }
 
 .video__desc {

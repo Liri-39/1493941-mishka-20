@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preload" href="/fonts/opensans.woff2" as="font">
   <link rel="stylesheet" type="text/css" href="css/styles.min.css">
 </head>
 
@@ -165,12 +165,12 @@
       <nav class="page-header__nav page-header__nav--menu page-header__nav--index main-nav">
         <ul class="main-nav__list main-nav__list--menu">
           <li class="main-nav__item main-nav__item--menu">
-            <a class="main-nav__item--link" href="catalog.html">
+            <a class="main-nav__item-link" href="catalog.html">
               Каталог товаров
             </a>
           </li>
           <li class="main-nav__item main-nav__item--menu">
-            <a class="main-nav__item--link" href="form.html">
+            <a class="main-nav__item-link" href="form.html">
               Вязание на заказ
             </a>
           </li>
@@ -185,10 +185,10 @@
             </form>
           </li>
           <li class="main-nav__item basket">
-            <svg class="basket--ico" width="21" height="18">
+            <svg class="basket__ico" width="21" height="18">
               <use xlink:href="#icon-cart"></use>
             </svg>
-            <a class="main-nav__item--link basket__link" href="">
+            <a class="main-nav__item-link basket__link" href="">
               Корзина: <span class="basket__value">пока пуста</span>
             </a>
           </li>
@@ -196,9 +196,13 @@
       </nav>
       <nav class="page-header__promo-menu page-header__promo-menu--index promo-menu">
         <ul class="promo-menu__list">
-          <li class="promo-menu__item">Новые поступления</li>
-          <li class="promo-menu__item">Распродажа</li>
-          <li class="promo-menu__item promo-menu__item--rigth">Бесплатная доставка по России
+          <li class="promo-menu__item">
+            <a class="promo-menu__item-link" href="">Новые поступления</a>
+          </li>
+          <li class="promo-menu__item">
+            <a class="promo-menu__item-link" href="">Распродажа</a></li>
+          <li class="promo-menu__item promo-menu__item--rigth">
+            <a class="promo-menu__item-link promo-menu__item-rigth-link" href="">Бесплатная доставка по России</a>
           </li>
         </ul>
       </nav>
@@ -208,7 +212,7 @@
   <main class="page-main">
     <section class="main-title bow">
       <div class="main-title__title">
-        <h1 class="main-title__title-text">Милые штуки <br>ручной <br>работы для дома</h1>
+        <h1 class="main-title__title-text">Милые штуки&nbsp;<br>ручной<br>работы для дома</h1>
       </div>
       <nav class="main-title__category-nav category-nav">
         <ul class="category-nav__list">
@@ -253,7 +257,7 @@
           <img class="goods-item__img" src="./img/triple-set-mobile@1x.jpg" srcset="./img/triple-set-mobile@1x.jpg  1x, ./img/triple-set-mobile@2x.jpg  2x" alt="Вязаные корзинки">
         </picture>
       </a>
-      <p class="goods-item__price">Цена: <span class="goods-item__price--value">990 руб.</span></p>
+      <p class="goods-item__price">Цена: <span class="goods-item__price-value">990 руб.</span></p>
       <a class="button goods-item__button" href="">ЗАКАЗАТЬ</a>
     </section>
     <section class="advantages">
@@ -320,17 +324,19 @@
       <p class="contacts__item contacts__item--even">адрес:
         <span class="contacts__content contacts__content--address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
       </p>
-      <div class="contacts__map">
+      <!--<div class="contacts__map">
         <picture>
           <source type="image/webp" media="(min-width: 1150px)" srcset="./img/map-desktop@1x.webp 1x, ./img/map-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="./img/map-tablet@1x.webp 1x, ./img/map-tablet@2x.webp 2x">
-          <source type="image/webp" src="./img/map-mobile@1x.jpg" srcset="./img/map-mobile@1x.webp 1x, ./img/map-mobile@2x.webp 2x">
+          <source type="image/webp" srcset="./img/map-mobile@1x.webp 1x, ./img/map-mobile@2x.webp 2x">
           <source media="(min-width: 1150px)" srcset="./img/map-desktop@1x.jpg 1x, ./img/map-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="./img/map-tablet@1x.jpg 1x, ./img/map-tablet@2x.jpg 2x">
           <img src="./img/map-mobile@1x.jpg" srcset="./img/map-mobile@1x.jpg 1x, ./img/map-mobile@2x.jpg 2x" alt="Мы на карте">
         </picture>
+      </div>-->
+      <div class="contacts__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.320858716096975!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1599677792183!5m2!1sru!2sru" width="100%" height="457px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
-
       <p class="contacts__item contacts__item--button">
         <a class="button contacts__button" href="">Напишите нам</a>
       </p>
@@ -371,7 +377,7 @@
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy.ru">
-          <svg class="copyright__link--icon" width="41" height="41" role="img" aria-label="htmlacademy-logo">
+          <svg class="copyright__icon" width="41" height="41" role="img" aria-label="htmlacademy-logo">
             <use xlink:href="#htmlacademy"></use>
           </svg>
           <!--<img src="./img/htmlacademy.svg" width="30" height="35" alt=" htmlacademy-logo">-->
@@ -379,6 +385,7 @@
       </div>
     </div>
   </footer>
+  <div class="modal modal__fade"></div>
   <div class="modal add-basket">
     <p class="add-basket__title">
       Добавить <br>в корзину
@@ -411,6 +418,7 @@
       </button>
     </form>
   </div>
+
 </body>
 
 </html>

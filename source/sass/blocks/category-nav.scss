@@ -25,6 +25,14 @@
 .category-nav__item {
   padding-top: 24px;
   padding-bottom: 31px;
+  position: relative;
+
+  &:hover {
+    top: -5px;
+    transform: scaleY(1.05);
+    background-position-y: 38%;
+    background-blend-mode: soft-light;
+  }
 
   @media (min-width: $tablet-width) {
     width: 50%;

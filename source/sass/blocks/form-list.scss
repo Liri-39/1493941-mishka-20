@@ -133,6 +133,10 @@
     width: 54px;
     height: 56px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: -21px;
+  }
 }
 
 .form-list__checkbox:checked + label::before {
@@ -145,6 +149,10 @@
     width: 54px;
     height: 56px;
     background-size: 100%, 64%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -21px;
   }
 }
 
@@ -159,8 +167,12 @@
   @media (min-width: $tablet-width) {
     margin-left: 82px;
   }
-}
 
-.form-list__checkbox-name:not(:last-child) {
-  margin-bottom: 45px;
+  @media (min-width: $desktop-width) {
+    font-weight: 500;
+  }
+
+  .form-list__checkbox-name:not(:last-child) {
+    margin-bottom: 45px;
+  }
 }

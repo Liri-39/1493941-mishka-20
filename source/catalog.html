@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preload" href="/fonts/opensans.woff2" as="font">
   <link rel="stylesheet" type="text/css" href="css/styles.min.css">
 </head>
 
@@ -77,12 +77,12 @@
       <nav class="page-header__nav page-header__nav--menu main-nav">
         <ul class="main-nav__list main-nav__list--menu">
           <li class="main-nav__item main-nav__item--menu">
-            <a class="main-nav__item--link" href="catalog.html">
+            <a class="main-nav__item-link" href="catalog.html">
               Каталог товаров
             </a>
           </li>
           <li class="main-nav__item main-nav__item--menu">
-            <a class="main-nav__item--link" href="form.html">
+            <a class="main-nav__item-link" href="form.html">
               Вязание на заказ
             </a>
           </li>
@@ -97,10 +97,10 @@
             </form>
           </li>
           <li class="main-nav__item basket">
-            <svg class="basket--ico" width="21" height="18">
+            <svg class="basket__ico" width="21" height="18">
               <use xlink:href="#icon-cart"></use>
             </svg>
-            <a class="main-nav__item--link basket__link" href="">
+            <a class="main-nav__item-link basket__link" href="">
               Корзина: <span class="basket__value">пока пуста</span>
             </a>
           </li>
@@ -109,12 +109,12 @@
       <nav class="page-header__promo-menu promo-menu">
         <ul class="promo-menu__list">
           <li class="promo-menu__item">
-            <a class="promo-menu__item--link" href="">Новые поступления</a>
+            <a class="promo-menu__item-link" href="">Новые поступления</a>
           </li>
           <li class="promo-menu__item">
-            <a class="promo-menu__item--link" href="">Распродажа</a></li>
+            <a class="promo-menu__item-link" href="">Распродажа</a></li>
           <li class="promo-menu__item promo-menu__item--rigth">
-            <a class="promo-menu__item--link promo-menu__item--rigth-link" href="">Бесплатная доставка по России</a>
+            <a class="promo-menu__item-link promo-menu__item-rigth-link" href="">Бесплатная доставка по России</a>
           </li>
         </ul>
       </nav>
@@ -189,20 +189,21 @@
         </ul>
       </div>
       <div class="video">
-        <picture class="video__video">
-          <source type="image/webp" media="(min-width: 1150px)" srcset="./img/video-desktop@1x.webp 1x, ./img/video-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="./img/video-tablet@1x.webp 1x, ./img/video-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="./img/video-mobile@1x.webp 1x, ./img/video-mobile@2x.webp 2x">
-          <source media="(min-width: 1150px)" srcset="./img/video-desktop@1x.jpg 1x, ./img/video-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg 1x, ./img/video-tablet@2x.jpg 2x">
-          <img class="video__video" src="./img/video-tablet@1x.jpg" srcset="./img/video-mobile@1x.jpg 1x, ./img/video-mobile@2x.jpg 2x" alt="Здесь будет видео">
-        </picture>
-        <button class="video__play">
-          <svg class="video__play-ico" width="102" height="78">
-            <use xlink:href="#icon-play"></use>
-          </svg>
-        </button>
-
+        <div class="video__video">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="./img/video-desktop@1x.webp 1x, ./img/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/video-tablet@1x.webp 1x, ./img/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/video-mobile@1x.webp 1x, ./img/video-mobile@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="./img/video-desktop@1x.jpg 1x, ./img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg 1x, ./img/video-tablet@2x.jpg 2x">
+            <img class="video__img" src="./img/video-mobile@1x.jpg" srcset="./img/video-mobile@1x.jpg 1x, ./img/video-mobile@2x.jpg 2x" alt="Здесь будет видео">
+          </picture>
+          <button class="video__play">
+            <svg class="video__play-ico" width="102" height="78">
+              <use xlink:href="#icon-play"></use>
+            </svg>
+          </button>
+        </div>
         <!--<video class="video__video" preload="none" poster="./img/video-tablet@1x.jpg"></video>-->
         <div class="video__border">
           <h2 class="page-main__h2 video__title">
@@ -251,7 +252,7 @@
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy.ru">
-          <svg class="copyright__link--icon" width="41" height="41" role="img" aria-label="htmlacademy-logo">
+          <svg class="copyright__icon" width="41" height="41" role="img" aria-label="htmlacademy-logo">
             <use xlink:href="#htmlacademy"></use>
           </svg>
           <!--<img src="./img/htmlacademy.svg" width="30" height="35" alt=" htmlacademy-logo">-->
@@ -259,7 +260,39 @@
       </div>
     </div>
   </footer>
+  <div class="modal modal__fade"> </div>
+  <div class="modal add-basket">
+    <p class="add-basket__title">
+      Добавить <br>в корзину
+    </p>
+    <p class="add-basket__desc">Выберите размер:</p>
+    <form class="add-basket__size-box size-box">
+      <ul class="size-box__list">
 
+        <li class="size-box__item">
+          <input class="visually-hidden size-box__checkbox" type="radio" id="size1" name="size">
+          <label class="size-box__size-name" for="size1">
+            S
+          </label>
+        </li>
+        <li class="size-box__item">
+          <input class="visually-hidden size-box__checkbox" type="radio" id="size2" name="size">
+          <label class="size-box__size-name" for="size2">
+            M
+          </label>
+        </li>
+        <li class="size-box__item">
+          <input class="visually-hidden size-box__checkbox " type="radio" id="size3" name="size" checked>
+          <label class="size-box__size-name" for="size3">
+            L
+          </label>
+        </li>
+      </ul>
+      <button class="size-box__button" type="submit">
+        Добавить
+      </button>
+    </form>
+  </div>
 </body>
 
 </html>

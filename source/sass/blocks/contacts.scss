@@ -126,8 +126,18 @@
 
 .contacts__content--mail {
   color: $greyish-black;
-  box-shadow: 0 2px 0 0 $tiffany;
+  box-shadow: 0 2px 0 0 $bright-tiffany;
   text-decoration: none;
+
+  &:hover {
+    color: $tiffany;
+    box-shadow: 0 2px 0 0 $tiffany;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
 }
 
 .contacts__content--address {

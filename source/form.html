@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preload" href="/fonts/opensans.woff2" as="font">
   <link rel="stylesheet" type="text/css" href="css/styles.min.css">
 </head>
 
@@ -91,12 +91,12 @@
       <nav class="page-header__nav page-header__nav--menu main-nav">
         <ul class="main-nav__list main-nav__list--menu">
           <li class="main-nav__item main-nav__item--menu">
-            <a class="main-nav__item--link" href="catalog.html">
+            <a class="main-nav__item-link" href="catalog.html">
               Каталог товаров
             </a>
           </li>
           <li class="main-nav__item main-nav__item--menu">
-            <a class="main-nav__item--link" href="form.html">
+            <a class="main-nav__item-link" href="form.html">
               Вязание на заказ
             </a>
           </li>
@@ -111,10 +111,10 @@
             </form>
           </li>
           <li class="main-nav__item basket">
-            <svg class="basket--ico" width="21" height="18">
+            <svg class="basket__ico" width="21" height="18">
               <use xlink:href="#icon-cart"></use>
             </svg>
-            <a class="main-nav__item--link basket__link" href="">
+            <a class="main-nav__item-link basket__link" href="">
               Корзина: <span class="basket__value">пока пуста</span>
             </a>
           </li>
@@ -122,9 +122,13 @@
       </nav>
       <nav class="page-header__promo-menu promo-menu">
         <ul class="promo-menu__list">
-          <li class="promo-menu__item">Новые поступления</li>
-          <li class="promo-menu__item">Распродажа</li>
-          <li class="promo-menu__item promo-menu__item--rigth">Бесплатная доставка по России
+          <li class="promo-menu__item">
+            <a class="promo-menu__item-link" href="">Новые поступления</a>
+          </li>
+          <li class="promo-menu__item">
+            <a class="promo-menu__item-link" href="">Распродажа</a></li>
+          <li class="promo-menu__item promo-menu__item--rigth">
+            <a class="promo-menu__item-link promo-menu__item-rigth-link" href="">Бесплатная доставка по России</a>
           </li>
         </ul>
       </nav>
@@ -196,19 +200,19 @@
           </div>
           <div class="form__item form__item--contacts">
             <label class="form__item-name" for="tel" aria-label="Ваш номер  телефона">Тел</label>
-            <input class="form__input form__input--tel" type="tel" name="tel" id="tel" pattern="[+]{1}[7]{1} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-            <svg class="form__input--ico-phone" width="25" height="24">
+            <input class="form__input form__input--phone" type="tel" name="tel" id="tel" pattern="[+]{1}[7]{1} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <svg class="form__ico form__ico--phone" width="25" height="24">
               <use xlink:href="#icon-phone"></use>
             </svg>
             <label class="form__item-name" for="email" aria-label="Ваш адрес электронной почты">E-mail</label>
             <input class="form__input form__input--email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
-            <svg class="form__input--ico-mail" width="32" height="21">
+            <svg class="form__ico form__ico--mail" width="32" height="21">
               <use xlink:href="#icon-mail"></use>
             </svg>
           </div>
           <div class="form__item form__item--dop">
-            <label class="form__item-name form__input-name--dop" for="text" aria-label="Дополнительная информация к заказу">Доп</label>
-            <textarea class=" form__textarea" rows="6" name="text" id="text">Опишите все ваши пожелания к заказу </textarea>
+            <label class="form__item-name form__item-name--dop" for="text" aria-label="Дополнительная информация к заказу">Доп</label>
+            <textarea class=" form__textarea" placeholder="Опишите все ваши пожелания к заказу" rows="6" name="text" id="text"></textarea>
           </div>
           <p class="form__footnote">*Поля обязательны для заполнения</p>
           <button class="button form__button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
@@ -251,7 +255,7 @@
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy.ru">
-          <svg class="copyright__link--icon" width="41" height="41" role="img" aria-label="htmlacademy-logo">
+          <svg class="copyright__icon" width="41" height="41" role="img" aria-label="htmlacademy-logo">
             <use xlink:href="#htmlacademy"></use>
           </svg>
           <!--<img src="./img/htmlacademy.svg" width="30" height="35" alt=" htmlacademy-logo">-->

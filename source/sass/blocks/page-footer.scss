@@ -1,9 +1,14 @@
 .page-footer {
   display: flex;
   background-color: $ligthgrey;
+  grid-row: 3;
 
   @media (min-width: $tablet-width) {
     margin-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 23px;
   }
 }
 
@@ -25,6 +30,7 @@
     margin-left: $wrap-desktop;
     margin-right: $wrap-desktop;
     padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 
