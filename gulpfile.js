@@ -11,6 +11,9 @@ const webp = require('gulp-webp');
 const imagemin = require("gulp-imagemin");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const uglify = require('gulp-uglify');
+const pipeline = require('readable-stream').pipeline;
+const htmlmin = require('gulp-htmlmin');
 
 
 // Styles
@@ -54,12 +57,13 @@ const html = () => {
   return gulp.src(["source/*.html"], {
       base: "source"
     })
+    .pipe(htmlmin({
+      collapseWhitespace: true
+    }))
     .pipe(gulp.dest("build"));
 }
 
 exports.html = html;
-
-
 
 // Images
 
@@ -120,10 +124,31 @@ const clean = () => {
 };
 exports.clean = clean;
 
+//HTMLmin
+
+const htmlm = () => {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({
+      collapseWhitespace: true
+    }))
+    .pipe(gulp.dest('build'));
+};
+exports.htmlm = htmlm;
+
+//Jsmin
+const jsmin = () => {
+  return pipeline(
+    gulp.src('source/js/*.js'),
+    uglify(),
+    gulp.dest('build/js')
+  );
+};
+exports.jsmin = jsmin;
+
 // Build
 
 const build = gulp.series(
-  clean, copy, styles, images, sprite, webpimages, html
+  clean, copy, styles, images, sprite, webpimages, jsmin, html
 );
 exports.build = build;
 
@@ -132,8 +157,10 @@ exports.build = build;
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html", gulp.series("html"));
+  gulp.watch("source/js/*.js", gulp.series("jsmin"));
   gulp.watch("build/*.html").on("change", sync.reload);
   gulp.watch("build/css/*.css").on("change", sync.reload);
+  gulp.watch("build/js/*.js").on("change", sync.reload);
 }
 
 exports.default = gulp.series(
