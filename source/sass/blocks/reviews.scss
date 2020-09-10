@@ -19,6 +19,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url(".././img/review@2x.jpg");
+      background-size: 350px auto;
     }
   }
 
@@ -178,6 +179,8 @@
     grid-row: 1;
     align-self: end;
     border: none;
+    margin-bottom: 30px;
+
   }
 
   @media (min-width: $desktop-width) {
@@ -187,28 +190,38 @@
 
 .reviews__button {
   margin: 0;
-  padding: 13px 38px;
+  padding: 0;
   width: 56px;
   height: 50px;
   flex-grow: 1;
+  background-color: transparent;
   border: none;
   cursor: pointer;
+
+  @include center-x;
+  align-items: center;
+
+  &:hover {
+    color: rgba($black, 0.6);
+  }
+
+  &:focus {
+    outline: none;
+    color: rgba($black, 0.3);
+  }
 }
 
 .reviews__button--prev {
-  background: $white url(".././img/icon-left-arrow.svg") no-repeat 50% center;
   border-right: 1px solid $ligther-grey;
 
   @media (min-width: $tablet-width) {
-    background-position: 33% 79%;
     border: none;
   }
 }
 
 .reviews__button--next {
-  background: $white url(".././img/icon-right-arrow.svg") no-repeat 50% center;
 
-  @media (min-width: $tablet-width) {
-    background-position: 43% 79%;
-  }
+  @media (min-width: $tablet-width) {}
 }
+
+.reviews__button-ico {}

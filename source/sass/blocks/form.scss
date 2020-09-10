@@ -192,11 +192,21 @@
   font-size: 17px;
   line-height: 18px;
 
+  &:hover {
+    box-shadow: inset 0 -2px 0 $bright-tiffany;
+  }
+
+  &:focus {
+    outline: none;
+    color: $greyish-black;
+    box-shadow: inset 0 -2px 0 $bright-tiffany;
+  }
 
   @media (min-width: $tablet-width) {
     grid-column: 2/5;
     padding: 0;
     padding-bottom: 14px;
+    padding-left: 17px;
     margin-left: 26px;
     font-size: 19px;
     line-height: 18px;
@@ -213,7 +223,6 @@
   @include main-font;
 
   @media (min-width: $tablet-width) {
-    padding-left: 17px;
     font-size: 19px;
     line-height: 18px;
     margin-top: -9px;
@@ -225,12 +234,23 @@
   display: block;
   width: 100%;
   margin-top: 21px;
-  border: 2px solid #444444;
+  border: 2px solid $greyish-black;
   padding: 15px 15px 9px;
 
   @include main-font;
   line-height: 19px;
   color: rgba($black, 0.3);
+
+  &:hover {
+    border: 2px solid $bright-tiffany;
+  }
+
+  &:focus {
+    padding-left: 17px;
+    outline: none;
+    color: $black;
+    border: 2px solid $bright-tiffany;
+  }
 
   @media (min-width: $tablet-width) {
     grid-column: 2/5;
@@ -299,10 +319,19 @@
   }
 }
 
-.form__input--tel {
+.form__input--phone {
   padding-top: 18px;
   padding-bottom: 19px;
   margin-bottom: 36px;
+
+  &:hover + .form__ico {
+    color: $bright-tiffany;
+  }
+
+  &:focus + .form__ico {
+    color: $bright-tiffany;
+  }
+
 
   @media (min-width: $tablet-width) {
     background-color: $ligthgrey;
@@ -311,42 +340,34 @@
     padding-bottom: 15px;
     margin-bottom: 35px;
     padding-right: 60px;
+    padding-left: 17px;
   }
 }
 
-.form__input--ico-phone {
-  display: block;
-  position: absolute;
-  fill: rgba($black, 0.2);
-  top: 14%;
-  right: 3%;
+.form__ico {
+  display: none;
 
   @media (min-width: $tablet-width) {
-    top: 27%;
-    right: 10%;
+    display: block;
+    grid-column: 4/5;
+    position: absolute;
+    color: rgba($black, 0.3);
+    align-self: start;
+    justify-self: end;
   }
 
   @media (min-width: $desktop-width) {
-    top: 26%;
-    right: 20%;
+    grid-column: 5/6;
   }
+
 }
 
-.form__input--ico-mail {
-  display: block;
-  position: absolute;
-  fill: rgba($black, 0.2);
-  top: 66%;
-  right: 1%;
+.form__ico--phone {
+  grid-row: 1;
+}
 
-  @media (min-width: $tablet-width) {
-    top: 62%;
-    right: 10%;
-  }
-
-  @media (min-width: $desktop-width) {
-    right: 20%;
-  }
+.form__ico--mail {
+  grid-row: 2;
 }
 
 .form__input--text {
@@ -360,11 +381,20 @@
   padding-bottom: 19px;
   margin-bottom: 36px;
 
+  &:hover + .form__ico {
+    color: $bright-tiffany;
+  }
+
+  &:focus + .form__ico {
+    color: $bright-tiffany;
+  }
+
   @media (min-width: $tablet-width) {
     background-color: $ligthgrey;
     padding: 0;
     margin: 0;
     padding-bottom: 15px;
     padding-right: 60px;
+    padding-left: 17px;
   }
 }

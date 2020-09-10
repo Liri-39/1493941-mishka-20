@@ -2,7 +2,7 @@
   content: "";
   display: block;
   width: 100%;
-  height: 10px;
+  height: 15px;
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -11,8 +11,7 @@
   background-size: 100%;
 
   @media (min-width: $tablet-width) {
-    //width: 115%;
-    height: 20px;
+    height: 25px;
     bottom: -25px;
     background-size: 100%;
   }

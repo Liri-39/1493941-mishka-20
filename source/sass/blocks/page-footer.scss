@@ -1,9 +1,14 @@
 .page-footer {
   display: flex;
   background-color: $ligthgrey;
+  grid-row: 3;
 
   @media (min-width: $tablet-width) {
     margin-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 23px;
   }
 }
 
@@ -25,6 +30,7 @@
     margin-left: $wrap-desktop;
     margin-right: $wrap-desktop;
     padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 
@@ -33,6 +39,21 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+}
+
+.page-footer__logo-img {
+  width: 102px;
+  height: 35px;
+  color: $black;
+
+  &:hover {
+    color: $ligth-tiffany;
+  }
+
+  &:active {
+    color: $ligth-tiffany;
+    opacity: 0.3;
   }
 }
 

@@ -1,11 +1,24 @@
+.basket__ico {
+  display: block;
+  position: absolute;
+  top: 41%;
+  left: 30px;
+  color: rgba($black, 0.2);
+}
+
 .basket__link {
-  /*background-image: url('../img/sprite.svg');
-background-repeat: no-repeat;
-background-position: center left;*/
   padding-left: 46px;
 
+  &:hover .basket__ico {
+    color: $tiffany;
+  }
+
+  &:focus .basket__ico {
+    color: rgba($tiffany, 0.3);
+  }
+
   @media (min-width: $desktop-width) {
-    padding-left: 53px;
+    padding-left: 47px;
   }
 }
 
@@ -20,12 +33,4 @@ background-position: center left;*/
   @media (min-width: $tablet-width) {
     padding-top: 33px;
   }
-}
-
-.basket--ico {
-  display: block;
-  position: absolute;
-  top: 41%;
-  left: 30px;
-  fill: rgba($black, 0.2);
 }

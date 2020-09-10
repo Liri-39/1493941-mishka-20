@@ -35,6 +35,15 @@
   }
 }
 
-.copyright__link--icon {
-  fill: $tiffany;
+.copyright__icon {
+  color: $tiffany;
+
+  &:hover {
+    color: $ligth-tiffany;
+  }
+
+  &:active {
+    color: $ligth-tiffany;
+    opacity: 0.3;
+  }
 }

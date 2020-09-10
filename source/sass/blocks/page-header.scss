@@ -1,5 +1,6 @@
 .page-header {
   position: relative;
+  grid-row: 1;
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient($white 65%, rgba($black, 0.1) 65%, $ligthgrey 67%);
@@ -51,6 +52,10 @@
   max-width: 100%;
   position: relative;
 
+  &:focus {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     width: auto;
     grid-column: 1/1;
@@ -64,6 +69,9 @@
     grid-row: 1;
     border-bottom: none;
     margin-left: 0;
+    z-index: 5;
+    width: 50%;
+    justify-self: center;
   }
 }
 
@@ -98,6 +106,10 @@
 
 .page-header__logo-img {
   margin: 22px auto 17px;
+
+  &:hover {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;

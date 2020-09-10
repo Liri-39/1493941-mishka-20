@@ -23,55 +23,73 @@
 }
 
 .category-nav__item {
-  padding-top: 24px;
-  padding-bottom: 31px;
+  position: relative;
+
+  &:hover .category-nav__item-ico {
+    color: rgba($ico, 0.7);
+  }
+
+  &:active .category-nav__item-ico {
+    color: rgba($ico, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     width: 50%;
-    padding-top: 26px;
-    padding-bottom: 34px;
+
+    &:hover {
+      top: -5px;
+      transform: scaleY(1.05);
+    }
   }
 }
 
 .category-nav__item-link {
   display: flex;
-  width: 50%;
+  width: 100%;
   color: $white;
   font-weight: bold;
   font-size: 19px;
   text-decoration: none;
   padding-left: 30px;
   padding-right: 30px;
+  padding-top: 24px;
+  padding-bottom: 31px;
+  position: relative;
+
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding-left: 35px;
+    padding-top: 26px;
+    padding-bottom: 34px;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 40%;
-  }
+  @media (min-width: $desktop-width) {}
+}
+
+.category-nav__item-ico {
+  color: rgba($ico, 0.5);
+  position: absolute;
+  right: 37px;
+  top: 29px;
+
+  @media (min-width: $desktop-width) {}
 }
 
 .category-nav__item--interior {
-  background: $tiffany url(".././img/icon-interior.svg") no-repeat;
-  background-blend-mode: soft-light;
-  background-position-x: 87%;
-  background-position-y: 52%;
+  background-color: $tiffany;
 
-  @media (min-width: $desktop-width) {
-    background-position-x: 93%;
+  &:hover {
+    background-color: $nav-menu-hover;
   }
 }
 
-.category-nav__item--toys {
-  background: $dark-tiffany url(".././img/icon-toy.svg") no-repeat;
-  background-blend-mode: soft-light;
-  background-position-x: 88%;
-  background-position-y: 52%;
 
-  @media (min-width: $desktop-width) {
-    background-position-x: 93%;
+.category-nav__item--toys {
+  background: $dark-tiffany;
+
+  &:hover {
+    background-color: $ligth-tiffany;
   }
 }

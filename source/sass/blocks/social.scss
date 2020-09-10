@@ -8,12 +8,20 @@
 
 .social__link {
   display: flex;
-  /* width: 30px;
-  height: 30px;*/
+  color: $black;
+
+  &:hover {
+    color: $ligth-tiffany;
+  }
+
+  &:active {
+    color: $ligth-tiffany;
+    opacity: 0.3;
+  }
 }
 
 .social__link--twitter {
-  /*background: url(.././img/icon-twitter.svg) no-repeat center;*/
+  fill: &tiffany;
 }
 
 .social__link--facebook {

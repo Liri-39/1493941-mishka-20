@@ -1,11 +1,8 @@
 .catalog {
-  margin-bottom: 54px;
-
   @include center-x;
 
   @media (min-width: $tablet-width) {
     padding-top: 75px;
-    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
