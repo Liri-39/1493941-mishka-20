@@ -1,7 +1,6 @@
 .video {
   margin: 0 $wrap 58px;
   border: 1px solid $ligther-grey;
-  padding-top: 97px;
 
   @include center-x;
   flex-wrap: wrap;
@@ -18,8 +17,9 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, min-content);
     padding: 0;
     margin-left: $wrap-tablet;
     margin-right: $wrap-tablet;
@@ -27,7 +27,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: 65% 35%;
     grid-template-rows: repeat(3, min-content);
     padding: 0;
     margin-left: $wrap-desktop;
@@ -38,6 +38,8 @@
 
 .video__video {
   width: 100%;
+  grid-column: 1;
+  grid-row: 1;
   display: grid;
   position: relative;
 
@@ -47,21 +49,22 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 65%;
+    grid-column: 1;
+    grid-row: 1/5;
   }
 }
 
 .video__border {
   display: flex;
   flex-direction: column;
-  margin-top: -97px;
   padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    grid-column: 1/5;
+    grid-column: 1;
     grid-row: 2/5;
     border: 1px solid $ligther-grey;
     padding-bottom: 45px;
+    padding-top: 88px;
     margin: 0;
 
     &:hover {
@@ -74,10 +77,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 20%;
-    flex: 1;
+    grid-column: 2;
+    grid-row: 1/5;
     padding-left: 78px;
-    padding-top: 41px;
+    padding-top: 170px;
     padding-right: 57px;
   }
 }
@@ -89,26 +92,24 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
-  top: calc(((100vw - 30px) / 2) * -1);
 
   @media (min-width: $tablet-width) {
-    grid-column: 1/5;
+    grid-column: 1;
     grid-row: 2;
     font-size: 20px;
     padding: 39px 13px 24px 107px;
-    top: 0;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 5/7;
+    grid-column: 2;
     grid-row: 1;
-    padding: 55px 0 26px 0;
+    padding: 97px 79px 26px;
   }
 }
 
 .video__ico {
   position: absolute;
-  top: calc(50% - 15px);
+  top: 31px;
   left: 34px;
   fill: $tiffany;
 
@@ -118,10 +119,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 0;
-    left: 0;
+    top: 42px;
+    left: 78px;
   }
 }
+
 
 .video__play {
   padding: 0;
@@ -158,7 +160,7 @@
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
-    grid-column: 1/5;
+    grid-column: 1;
     grid-row: 3;
     padding: 0 10px 40px 40px;
     font-size: 15px;
@@ -166,7 +168,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 5/7;
+    grid-column: 2/3;
     grid-row: 2;
     padding: 0 0 52px 0;
   }

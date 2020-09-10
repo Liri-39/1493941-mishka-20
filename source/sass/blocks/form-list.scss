@@ -69,6 +69,12 @@
   }
 }
 
+.form-list__radio:focus + label,
+.form-list__checkbox:focus + label {
+  outline: 3px solid rgba($tiffany, 0.5);
+  outline-offset: 1px;
+}
+
 .form-list__radio + label::before {
   content: "";
   position: absolute;
