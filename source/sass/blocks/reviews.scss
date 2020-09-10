@@ -180,7 +180,6 @@
     align-self: end;
     border: none;
     margin-bottom: 30px;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -218,10 +217,3 @@
     border: none;
   }
 }
-
-.reviews__button--next {
-
-  @media (min-width: $tablet-width) {}
-}
-
-.reviews__button-ico {}

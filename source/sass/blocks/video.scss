@@ -1,6 +1,6 @@
 .video {
   margin: 0 $wrap 58px;
-  border: 1px solid #ECECEC;
+  border: 1px solid $ligther-grey;
   padding-top: 97px;
 
   @include center-x;
@@ -71,7 +71,6 @@
     &:active {
       box-shadow: 0 3px 5px rgba($black, 0.1);
     }
-
   }
 
   @media (min-width: $desktop-width) {
@@ -90,7 +89,7 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
-  top: calc(((100vw - 30px) / 2)*-1);
+  top: calc(((100vw - 30px) / 2) * -1);
 
   @media (min-width: $tablet-width) {
     grid-column: 1/5;
