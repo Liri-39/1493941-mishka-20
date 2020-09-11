@@ -1,9 +1,9 @@
-.social {
-  padding-bottom: 20px;
-}
-
 .social__item {
   display: flex;
+
+  &:not(:last-child) {
+    margin-right: 31px;
+  }
 }
 
 .social__link {
@@ -17,21 +17,8 @@
   &:active {
     color: $ligth-tiffany;
     opacity: 0.3;
+    outline: none;
   }
-}
-
-.social__link--twitter {
-  fill: &tiffany;
-}
-
-.social__link--facebook {
-  /*background: url(.././img/icon-fb.svg) no-repeat center;*/
-  margin-left: 33px;
-  margin-right: 33px;
-}
-
-.social__link--instagram {
-  /*background: url(.././img/icon-insta.svg) no-repeat center;*/
 }
 
 .social__list {
@@ -40,5 +27,7 @@
   list-style: none;
   font-size: 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  padding-bottom: 20px;
 }

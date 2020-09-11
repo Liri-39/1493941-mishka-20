@@ -23,18 +23,3 @@
     left: $wrap-desktop;
   }
 }
-
-/*.wave {
-  border-bottom: 10px solid transparent;
-  border-image-source: url('.././img/bg-zigzag-line.svg');
-  border-image-slice: 40;
-  border-image-width: 3%;
-
-  @media (min-width: $tablet-width) {
-    border-bottom: 20px solid transparent;
-  }
-
-  @media (min-width: $desktop-width) {
-    border-bottom: 30px solid transparent;
-  }
-}*/

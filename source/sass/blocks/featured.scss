@@ -1,7 +1,7 @@
 .featured {
   margin-top: 31px;
   margin-bottom: 27px;
-  padding-bottom: 36px;
+  padding-bottom: 41px;
   padding-left: $wrap;
   padding-right: $wrap;
 
@@ -11,7 +11,7 @@
     grid-template-rows: min-content min-content 1fr min-content min-content;
     padding-left: $wrap-tablet;
     padding-right: $wrap-tablet;
-    padding-bottom: 40px;
+    padding-bottom: 46px;
   }
 
   @media (min-width: $desktop-width) {

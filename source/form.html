@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="preload" href="/fonts/opensans.woff2" as="font">
+  <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
   <link rel="stylesheet" type="text/css" href="css/styles.min.css">
 </head>
 
@@ -19,22 +20,18 @@
           <img src="./img/logo-mobile.svg" alt="Мишка-лого" width="86" height="36">
         </picture>
       </a>
-      <button class="button page-header__menu-button" type="button" aria-label="Меню"></button>
+      <button class="main-nav__toggle main-nav__toggle--open main-nav__toggle--nojs" type="button" aria-label="Меню"></button>
       <nav class="page-header__nav page-header__nav--menu page-header__nav--index main-nav main-nav--closed main-nav--nojs">
         <ul class="main-nav__list main-nav__list--menu">
           <li class="main-nav__item main-nav__item--menu">
-            <a class="main-nav__item-link" href="catalog.html">
-              Каталог товаров
-            </a>
+            <a class="main-nav__item-link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__item main-nav__item--menu">
-            <a class="main-nav__item-link">
-              Вязание на заказ
-            </a>
+            <a class="main-nav__item-link">Вязание на заказ</a>
           </li>
         </ul>
       </nav>
-      <nav class="page-header__nav page-header__nav--top-menu main-nav main-nav--closed main-nav--nojs">
+      <nav class="page-header__nav page-header__nav--top-menu main-nav-top main-nav--closed main-nav--nojs">
         <ul class="main-nav__list">
           <li class="main-nav__item header-search">
             <form class="header-search__form" action="https://echo.htmlacademy.ru" method="get" id="search-form">
@@ -160,36 +157,33 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="index.html">
-        <svg class="page-footer__logo-img" alt="Мишка-лого" width="102" height="35">
+        <svg class="page-footer__logo-img" role="img" width="102" height="35">
           <use xlink:href="./img/sprite.svg#logo-footer"></use>
         </svg>
       </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме
-              <svg class="social__icon" width="22" height="22">
-                <use xlink:href="./img/sprite.svg#icon-insta"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке
-              <svg class="social__icon" width="30" height="30">
-                <use xlink:href="./img/sprite.svg#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy">Мы в Твиттере
-              <svg class="social__icon" width="22" height="22">
-                <use xlink:href="./img/sprite.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="page-footer__social social__list">
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме
+            <svg class="social__icon" width="22" height="22">
+              <use xlink:href="./img/sprite.svg#icon-insta"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке
+            <svg class="social__icon" width="30" height="30">
+              <use xlink:href="./img/sprite.svg#icon-fb"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy">Мы в Твиттере
+            <svg class="social__icon" width="22" height="22">
+              <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy.ru">
@@ -200,7 +194,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="js/menu.js"></script>
 </body>
 
 </html>

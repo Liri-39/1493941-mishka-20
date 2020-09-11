@@ -9,7 +9,6 @@
 }
 
 .form__item {
-  //border: none;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -92,7 +91,6 @@
 
     @media (min-width: $tablet-width) {
       margin-top: 0;
-      //margin-bottom: 37px;
     }
   }
 
@@ -345,7 +343,7 @@
 }
 
 .form__ico {
-  display: none;
+  display: block;
 
   @media (min-width: $tablet-width) {
     display: block;
