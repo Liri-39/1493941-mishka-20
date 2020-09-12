@@ -4,7 +4,7 @@
   }
 }
 
-.main-nav__toggle {
+.main-nav-toggle {
   position: absolute;
   z-index: 2;
   display: block;
@@ -17,7 +17,7 @@
   background-color: transparent;
 }
 
-.main-nav__toggle--open {
+.main-nav-toggle--open {
   &::before {
     content: "";
     display: block;
@@ -31,7 +31,7 @@
   }
 }
 
-.main-nav__toggle--close {
+.main-nav-toggle--close {
   &::before,
   &::after {
     content: "";
@@ -53,6 +53,6 @@
   }
 }
 
-.main-nav__toggle-nojs {
+.main-nav-toggle-nojs {
   display: none;
 }
