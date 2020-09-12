@@ -32,7 +32,6 @@
 }
 
 .main-nav__toggle--close {
-
   &::before,
   &::after {
     content: "";
@@ -40,7 +39,7 @@
     width: 21px;
     height: 2px;
     top: 9px;
-    right: 0px;
+    right: 0;
     background-color: $black;
   }
 
