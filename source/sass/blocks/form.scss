@@ -33,15 +33,19 @@
   padding-bottom: 34px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 30px;
+    padding-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 51px;
   }
 }
 
 .form__item--checkbox {
   @media (min-width: $tablet-width) {
     background-color: $ligthgrey;
-    padding-top: 67px;
-    padding-bottom: 68px;
+    padding-top: 47px;
+    padding-bottom: 50px;
   }
 }
 
@@ -121,15 +125,15 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1;
-    justify-content: center;
-    margin-right: 9px;
+    justify-self: start;
+    margin-left: 61px;
     padding-top: 4px;
   }
 }
 
 .form__item-list-name {
   @media (min-width: $tablet-width) {
-    padding-top: 0;
+    padding-top: 19px;
   }
 }
 
@@ -174,9 +178,9 @@
   }
 }
 
-.form__input-name--dop {
+.form__item-name--dop {
   @media (min-width: $tablet-width) {
-    padding-top: 41px;
+    padding-top: 39px
   }
 }
 
@@ -226,7 +230,6 @@
     margin-top: -9px;
   }
 }
-
 
 .form__textarea {
   display: block;
@@ -330,7 +333,6 @@
     color: $bright-tiffany;
   }
 
-
   @media (min-width: $tablet-width) {
     background-color: $ligthgrey;
     padding: 0;
@@ -339,17 +341,18 @@
     margin-bottom: 35px;
     padding-right: 60px;
     padding-left: 17px;
+    grid-row: 1;
   }
 }
 
 .form__ico {
   display: block;
+  position: absolute;
+  color: rgba($black, 0.3);
 
   @media (min-width: $tablet-width) {
     display: block;
     grid-column: 4/5;
-    position: absolute;
-    color: rgba($black, 0.3);
     align-self: start;
     justify-self: end;
   }
@@ -360,11 +363,33 @@
 }
 
 .form__ico--phone {
-  grid-row: 1;
+  top: 30px;
+  right: 5px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1;
+    top: 0;
+    right: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 7px;
+  }
 }
 
 .form__ico--mail {
-  grid-row: 2;
+  bottom: 50px;
+  right: 5px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2;
+    bottom: 62px;
+    right: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 4px;
+  }
 }
 
 .form__input--text {
@@ -393,5 +418,6 @@
     padding-bottom: 15px;
     padding-right: 60px;
     padding-left: 17px;
+    grid-row: 2;
   }
 }

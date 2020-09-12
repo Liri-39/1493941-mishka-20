@@ -15,6 +15,8 @@
   color: $black;
 }
 
-.page__body * {
+.page__body *,
+.page__body *::before,
+.page__body *::after {
   box-sizing: border-box;
 }

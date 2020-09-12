@@ -13,9 +13,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-size: 1250px;
+    background-size: 1150px;
     height: 38px;
     background-repeat: repeat;
-    background-position-x: 13px;
+  }
+}
+
+.bow--index::after {
+  @media (min-width: $desktop-width) {
+    background-size: 1250px;
+    background-position: 13px 0;
   }
 }
