@@ -173,20 +173,21 @@
   background-color: $backgrey;
   background-image: url(".././img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+  background-position: top center;
 
   @media (min-resolution: 2dppx) {
     background-image: url(".././img/video-mobile@2x.jpg");
-    background-size: 150% auto;
+    background-size: cover;
   }
 
   @media (min-width: $tablet-width) {
     background-image: url(".././img/video-tablet@1x.jpg");
-    background-size: 100% auto;
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url(".././img/video-tablet@2x.jpg");
-      background-size: 150% auto;
+      background-size: cover;
     }
   }
 
