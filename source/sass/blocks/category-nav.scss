@@ -7,7 +7,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: $wrap-desktop;
-    padding-right: $wrap-desktop;
+    padding-right: $wrap-desktop-right;
   }
 }
 
@@ -85,4 +85,8 @@
   &:hover {
     background-color: $ligth-tiffany;
   }
+}
+
+.category-nav__item-text {
+  max-width: 100px;
 }

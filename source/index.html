@@ -11,7 +11,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header page-header--index">
+  <header class="page-header page-header__index">
     <div class="page-header__wrapper">
       <a class="page-header__logo">
         <picture class="page-header__logo-img">
@@ -20,52 +20,56 @@
           <img src="./img/logo-mobile.svg" alt="Мишка-лого" width="86" height="36">
         </picture>
       </a>
-      <button class="main-nav-toggle main-nav-toggle--open main-nav-toggle--nojs" type="button" aria-label="Меню"></button>
-      <nav class="page-header__nav page-header__nav--menu page-header__nav--index main-nav main-nav--closed main-nav--nojs">
-        <ul class="main-nav__list main-nav__list--menu">
-          <li class="main-nav__item main-nav__item--menu">
-            <a class="main-nav__item-link" href="catalog.html">Каталог товаров</a>
+      <button class="toggle-menu-button toggle-menu-button--open toggle-menu-button--nojs" type="button" aria-label="Меню"></button>
+      <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--main main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__item">
+                <a class="main-menu__item-link" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="main-menu__item">
+                <a class="main-menu__item-link" href="form.html">Вязание на заказ</a>
+              </li>
+              <li class="main-menu__item main-menu__item--not-mobile">
+                <a class="main-menu__item-link" href="">Новые поступления</a>
+              </li>
+              <li class="main-menu__item main-menu__item--not-mobile">
+                <a class="main-menu__item-link" href="">Распродажа</a>
+              </li>
+            </ul>
           </li>
-          <li class="main-nav__item main-nav__item--menu">
-            <a class="main-nav__item-link" href="form.html">Вязание на заказ</a>
+          <li class="main-nav__item main-nav__item--user user-menu">
+            <ul class="user-menu__list">
+              <li class="user-menu__item header-search">
+                <form class="header-search__form" action="https://echo.htmlacademy.ru" method="get" id="search-form">
+                  <label class="header-search__label" for="search" aria-label="Поиск по сайту">
+                    <svg class="header-search__ico" width="21" height="18">
+                      <use xlink:href="./img/sprite.svg#icon-search"></use>
+                    </svg>
+                  </label>
+                  <input class="header-search__input" type="search" name="search" id="search" placeholder="Поиск по сайту">
+                </form>
+              </li>
+              <li class="user-menu__item basket">
+                <a class="user-menu__item-link basket__link" href="">
+                  <svg class="basket__ico" width="21" height="18">
+                    <use xlink:href="./img/sprite.svg#icon-cart"></use>
+                  </svg>
+                  Корзина: <span class="basket__value">пока пуста</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-nav__item main-nav__item--promo main-nav__item--promo-index promo-menu">
+            <ul class="promo-menu__list">
+              <li class="promo-menu__item promo-menu__item--rigth">
+                <a class="promo-menu__item-link" href="">Бесплатная доставка по России</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>
-      <div class="page-header__nav page-header__nav--top-menu main-nav-top main-nav--closed main-nav--nojs">
-        <ul class="main-nav__list">
-          <li class="main-nav__item header-search">
-            <form class="header-search__form" action="https://echo.htmlacademy.ru" method="get" id="search-form">
-              <label class="header-search__label" for="search" aria-label="Поиск по сайту">
-                <svg class="header-search__ico" width="21" height="18">
-                  <use xlink:href="./img/sprite.svg#icon-search"></use>
-                </svg>
-              </label>
-              <input class="header-search__input" type="search" name="search" id="search" placeholder="Поиск по сайту">
-            </form>
-          </li>
-          <li class="main-nav__item basket">
-            <a class="main-nav__item-link basket__link" href="">
-              <svg class="basket__ico" width="21" height="18">
-                <use xlink:href="./img/sprite.svg#icon-cart"></use>
-              </svg>
-              Корзина: <span class="basket__value">пока пуста</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-header__promo-menu page-header__promo-menu--index promo-menu">
-        <ul class="promo-menu__list">
-          <li class="promo-menu__item">
-            <a class="promo-menu__item-link" href="">Новые поступления</a>
-          </li>
-          <li class="promo-menu__item">
-            <a class="promo-menu__item-link" href="">Распродажа</a>
-          </li>
-          <li class="promo-menu__item promo-menu__item--rigth">
-            <a class="promo-menu__item-link promo-menu__item-rigth-link" href="">Бесплатная доставка по России</a>
-          </li>
-        </ul>
-      </div>
     </div>
   </header>
 
@@ -77,14 +81,16 @@
       <nav class="main-title__category-nav category-nav">
         <ul class="category-nav__list">
           <li class="category-nav__item category-nav__item--interior">
-            <a class="category-nav__item-link" href="">Предметы<br>интерьера
+            <a class="category-nav__item-link" href="">
+              <span class="category-nav__item-text">Предметы интерьера</span>
               <svg class="category-nav__item-ico" width="40" height="62">
                 <use xlink:href="./img/sprite.svg#icon-interior"></use>
               </svg>
             </a>
           </li>
           <li class="category-nav__item category-nav__item--toys">
-            <a class="category-nav__item-link" href="">Детские<br>игрушки
+            <a class="category-nav__item-link" href="">
+              <span class="category-nav__item-text">Детские игрушки</span>
               <svg class="category-nav__item-ico" width="60" height="62">
                 <use xlink:href="./img/sprite.svg#icon-toy"></use>
               </svg>
@@ -124,7 +130,7 @@
         </picture>
       </a>
       <p class="goods-item__price">Цена: <span class="goods-item__price-value">990 руб.</span></p>
-      <a class="button goods-item__button" href="">ЗАКАЗАТЬ</a>
+      <a class="button goods-item__button" href="">заказать</a>
     </section>
     <section class="advantages">
       <h2 class="page-main__h2 advantages__title">Коротко о нас:</h2>

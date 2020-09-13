@@ -44,6 +44,8 @@
     line-height: 57px;
     padding-bottom: 96px;
     padding-top: 57px;
+    padding-left: $wrap-desktop;
+    padding-right: $wrap-desktop-right;
   }
 }
 
@@ -66,7 +68,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: $wrap-desktop;
-    margin-right: $wrap-desktop;
+    margin-right: $wrap-desktop-right;
     padding-left: 175px;
     padding-right: 175px;
     margin-top: 117px;
@@ -96,6 +98,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 $wrap-desktop;
+    margin-left: $wrap-desktop;
+    margin-right: $wrap-desktop-right;
   }
 }

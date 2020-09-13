@@ -44,7 +44,7 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, min-content);
     padding-left: $wrap-desktop;
-    padding-right: $wrap-desktop;
+    padding-right: $wrap-desktop-right;
   }
 }
 

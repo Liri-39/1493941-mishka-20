@@ -1,8 +1,12 @@
 .header-search {
+  padding-top: 29px;
+  padding-bottom: 26px;
+  padding-left: 30px;
+
   @media (min-width: $tablet-width) {
-    padding: 0;
-    width: 86px;
+    width: 82px;
     margin: 0;
+    padding: 0;
     border-left: 1px solid rgba($black, 0.1);
     border-right: 1px solid rgba($black, 0.1);
   }

@@ -1,0 +1,44 @@
+.user-menu {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: $wrap-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: $wrap-desktop-right;
+  }
+}
+
+.user-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.user-menu__item {
+  width: 100%;
+
+  @include menu-button-shadow;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+
+    width: auto;
+    box-shadow: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 37px;
+  }
+}

@@ -45,8 +45,8 @@
   width: 100%;
   display: flex;
   color: $black;
-  font-weight: bold;
   text-decoration: none;
+  font-weight: 400;
 
   &:hover {
     opacity: 0.6;
@@ -55,8 +55,4 @@
   &:focus {
     opacity: 0.3;
   }
-}
-
-.promo-menu__item-rigth-link {
-  font-weight: 400;
 }

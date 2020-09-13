@@ -31,7 +31,7 @@
     grid-template-rows: repeat(3, min-content);
     padding: 0;
     margin-left: $wrap-desktop;
-    margin-right: $wrap-desktop;
+    margin-right: $wrap-desktop-right;
     margin-bottom: 82px;
   }
 }
@@ -73,6 +73,7 @@
     padding-bottom: 45px;
     padding-top: 88px;
     margin: 0;
+    margin-bottom: 10px;
 
     &:hover {
       box-shadow: 0 6px 10px rgba($black, 0.1);
@@ -90,10 +91,12 @@
     padding-top: 170px;
     padding-right: 57px;
     padding-bottom: 59px;
+    margin-bottom: 0;
   }
 }
 
 .video__title {
+  display: flex;
   width: 100%;
   position: relative;
   padding: 22px 13px 27px 91px;
@@ -246,5 +249,17 @@
     align-self: center;
     justify-self: center;
     width: 100%;
+  }
+}
+
+.video__title-text {
+  max-width: 100px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100px;
   }
 }

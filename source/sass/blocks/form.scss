@@ -23,7 +23,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: $wrap-desktop;
-    padding-right: $wrap-desktop;
+    padding-right: $wrap-desktop-right;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
   }
@@ -286,7 +286,7 @@
   @media (min-width: $desktop-width) {
     margin-right: auto;
     margin-top: 20px;
-    margin-left: 169px;
+    margin-left: 151px;
   }
 }
 

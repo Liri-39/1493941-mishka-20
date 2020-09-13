@@ -5,14 +5,14 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, min-content);
-    padding: 25px 0 26px;
+    padding: 25px 0 37px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, min-content);
     margin-left: $wrap-desktop;
-    margin-right: $wrap-desktop;
+    margin-right: $wrap-desktop-right;
     padding: 81px 0 83px;
   }
 }
@@ -151,7 +151,7 @@
 .contacts__map {
   background-color: $backgrey;
   background-image: url(".././img/icon-map-pin.svg"), url(".././img/map-mobile@1x.jpg");
-  background-position: 47% 43%, 0 0;
+  background-position: 54% 41%, 0 0;
   background-size: 66px, 100% auto;
   background-repeat: no-repeat;
   min-width: 100%;
@@ -184,8 +184,7 @@
     margin-top: 16px;
     margin-bottom: 51px;
     background-image: url(".././img/icon-map-pin.svg"), url(".././img/map-tablet@1x.jpg");
-    /*background-position: 47% 43%, 0 0;
-    background-size: 66px, 100% auto;*/
+    background-position: 52% 39%, 0 0;
     height: calc(100vw * 0.6);
 
     @media (min-resolution: 2dppx) {
