@@ -14,7 +14,7 @@ $bright-tiffany:#62d1ba;
 $ligth-tiffany:#46c1ae;
 $ico:#149080;
 $nav-menu-hover:#59d5bc;
-
+$footer-line:#E5E5E5;
 
 // Viewports
 
@@ -25,5 +25,5 @@ $mobile-width-only: 767px;
 // wrappers
 $wrap: 30px;
 $wrap-tablet: 50px;
-$wrap-desktop: calc(50px + ((100vw - 1150px) / 2));
-$wrap-desktop-right: calc(34px + ((100vw - 1150px) / 2));
+$wrap-desktop: calc(50px + ((100vw - 1167px) / 2));
+$wrap-desktop-right: calc(50px + ((100vw - 1167px) / 2));

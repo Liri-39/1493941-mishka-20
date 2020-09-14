@@ -27,7 +27,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 16px;
+    column-gap: 24px;
     margin-right: 130px;
   }
 }
@@ -58,7 +58,7 @@
     padding-bottom: 30px;
 
     &:nth-child(2n) {
-      margin-left: 19px;
+      margin-left: 11px;
     }
 
     &:first-child {

@@ -1,7 +1,7 @@
 .basket__ico {
   display: block;
   position: absolute;
-  top: 41%;
+  top: 35px;
   left: 30px;
   color: rgba($black, 0.2);
 }
@@ -32,7 +32,7 @@
   padding-left: $wrap;
 
   @media (min-width: $tablet-width) {
-    padding-left: 34px;
+    padding-left: 37px;
     padding-top: 33px;
     padding-bottom: 31px;
   }
