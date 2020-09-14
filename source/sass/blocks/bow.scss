@@ -22,6 +22,7 @@
 .bow--index::after {
   @media (min-width: $desktop-width) {
     background-size: 1250px;
-    background-position: 13px 0;
+    background-position: 6px 0;
+    bottom: -18px;
   }
 }
