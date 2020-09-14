@@ -2,6 +2,7 @@ var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.toggle-menu-button');
 
 navMain.classList.remove('main-nav--nojs');
+navToggle.classList.remove('toggle-menu-button--nojs');
 
 navToggle.addEventListener('click', function () {
 

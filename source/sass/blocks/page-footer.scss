@@ -57,6 +57,17 @@
   }
 }
 
+.page-footer__logo-img--index {
+  &:hover {
+    color: $black;
+  }
+
+  &:active {
+    color: $black;
+    opacity: 1;
+  }
+}
+
 .page-footer__social {
   width: 100%;
   display: flex;

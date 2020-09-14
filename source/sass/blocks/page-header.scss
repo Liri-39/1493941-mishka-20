@@ -73,6 +73,10 @@
     opacity: 0.6;
   }
 
+  &--index:hover {
+    opacity: 1;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
     margin-right: auto;

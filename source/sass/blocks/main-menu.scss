@@ -109,3 +109,13 @@
     padding-right: 6px;
   }
 }
+
+.main-menu__item-link--activ {
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    opacity: 1;
+  }
+}
